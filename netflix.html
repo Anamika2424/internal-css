@@ -7,18 +7,33 @@
     <style>
         body {
             margin: 0px;
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+        }
+        
+        .mainSection{
+            background-color: black;
+
+            width: 100%;
+            
+            
+
+
 
 
         }
-
-        .mainSection {
-            width: ;
-            margin: auto;
-            /* opacity: 20px; */
+        .mainSection::before {
+            /* width: ; */
+            /* margin: auto; */
+            
+            position: absolute;
+            content:"" ;
+            inset: 0px;
+            opacity: 0.5;
             background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/7968847f-3da9-44b3-8bbb-13a46579881f/web/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_medium.jpg)
         }
 
         .logoSection {
+            position: relative;
             margin: 0px;
             color: rgb(229, 9, 20);
             width: 10%;
@@ -28,19 +43,22 @@
         }
 
         .outerBoxOfNetflix {
+            position: relative;
             /* border: 1px solid black; */
-            width: 30%;
+            width: 33%;
             margin: auto;
             background-color: black;
-            opacity: 70%;
-            height: 60vh;
-
+            opacity: 85%;
+            height: 80vh;
+            margin-bottom: 50px;
+            border-radius: 10px;
         }
 
         .loginBox {
+            padding: 35px 0px;
             width: 100%;
-            /* text-align: center; */
-            /* margin: auto; */
+            display: flex;
+            justify-content: center;
         }
 
         .title {
@@ -53,7 +71,7 @@
         }
 
         .mobNumber {
-            width: 60%;
+            width: 90%;
             padding: 16px;
             background-color: transparent;
             opacity: 70%;
@@ -66,19 +84,24 @@
         }
 
         .signInBtn {
-            width: 68%;
+            width: 100%;
             padding: 16px;
             background-color: rgb(153, 22, 29);
             /* opacity: 70%; */
             color: rgb(255, 255, 255);
             font-weight: bold;
+            cursor: pointer;
 
+        }
+
+        .signInBtn:hover {
+            background-color: rgb(141, 18, 18);
         }
 
         .orDivider {
             color: rgb(255 255 255 / 70%);
             font-weight: 500;
-            /* text-align: center; */
+            text-align: center;
             padding: 15px;
         }
 
@@ -89,18 +112,30 @@
             /* justify-content: center; */
             font-weight: 600;
             padding: 15px;
-            width: 60%;
+            width: 90%;
             /* margin: auto; */
             text-align: center;
             margin-bottom: 15px;
         }
 
+        .useAsign:hover {
+            background-color: rgb(143, 138, 138);
+        }
+
         .forgotPassword {
             color: rgb(255, 255, 255);
             font-weight: 500;
-            /* text-align: center; */
+            text-align: center;
             text-decoration: underline;
             font-size: 18px;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+
+        }
+
+        .forgotPassword:hover {
+            color: lightgray;
         }
 
         .mobNo {
@@ -114,29 +149,88 @@
         .rememberMe {
             color: rgb(255, 255, 255);
             font-size: 18px;
+            margin-bottom: 15px;
         }
 
         .newTo {
             color: rgb(255 255 255 / 50%);
+            font-size: 18px;
 
         }
 
         .signUpBtn {
             color: rgb(255, 255, 255);
-            font-size: 16px;
+            font-size: 18px;
         }
-        .secOfbtn{
+
+        .secOfbtn {
             display: flex;
             font-size: 17px;
+            margin-bottom: 15px;
         }
-        .note{
+
+        .note {
             color: rgb(255 255 255 / 50%);
             font-size: 15px;
+            margin-bottom: 15px;
         }
-        .learnMore{
-         color:   rgb(68, 142, 244);
+
+        .learnMore {
+            color: rgb(68, 142, 244);
+            text-decoration: underline;
+            cursor: pointer;
         }
-        .learnMore.hover{
+
+        .learnMore.hover {}
+
+        .checkbox {
+            background-color: white;
+            color: black;
+        }
+
+        .chkBoxSec {
+            margin-bottom: 15px;
+        }
+
+        .footerSection {
+            background-color: rgb(22, 22, 22);
+            color: rgb(255, 255, 255);
+            width: 100%;
+            height: 30vh;
+            /* display: flex; */
+            
+        }
+
+        .footerElements {
+            padding: 50px;
+            width: 80%;
+            margin: auto;
+           
+            gap:60px;
+        }
+
+        .footerEle {
+            display: flex;
+            gap:15%;
+            line-height: 40px;
+            color:rgb(255 255 255 / 70%);
+            text-decoration: underline;
+        }
+        .footerNote{
+            color:rgb(255 255 255 / 70%);
+            text-decoration: underline;
+
+        }
+        .dropDownList{
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: 1px solid white;
+            border-radius: 5px;
+            appearance: none;
+            padding: 10px 30px;
+        }
+        .optionOfDropDown{
+            color: rgb(255, 255, 255);
             
         }
     </style>
@@ -158,8 +252,10 @@
 
         <div class="outerBoxOfNetflix">
             <div class="loginBox">
-                <div class="title">Sign In</div>
+                <!-- <div class="title">Sign In</div> -->
                 <div>
+                    <div class="title">Sign In</div>
+
                     <div class="mobNo"> <input type="password" placeholder="Password " class="mobNumber"></div>
                     <div class="password"> <input type="text" placeholder="Email or mobile number " class="mobNumber">
                     </div>
@@ -167,8 +263,8 @@
                     <div class="orDivider">OR</div>
                     <div class="useAsign">Use a sign-in-code</div>
                     <div class="forgotPassword">Forgot password</div>
-                    <div>
-                        <input type="checkbox" checked="checked">
+                    <div class="chkBoxSec">
+                        <input type="checkbox" class="checkbox" checked="checked">
                         <label class="rememberMe">Remember me
                         </label>
                     </div>
@@ -176,12 +272,41 @@
                         <div class="newTo">New to Netflix?</div>
                         <div class="signUpBtn">Sign up now.</div>
                     </div>
-                    <div class="note">This page is protected by Google reCAPTCHA to ensure you're not a bot.</div>
+                    <div class="note">This page is protected by Google reCAPTCHA to ensure<br> you're not a bot.</div>
                     <div class="learnMore"><a>Learn more</a></div>
                 </div>
             </div>
         </div>
+        <div class="footerSection">
+            <div class="footerElements">
+                <div class="footerNote">Questions? Call 000-800-919-1743 (Toll-Free)
+                </div>
+                <div class="footerEle">
+                    <div>
+                        <div>FAQ</div>
+                        <div>Cookie Preference</div>
+                        <div>
+                            
+                         <select class="dropDownList">
+                                <option class="optionOfDropDown">English  </option>
+                                <option class="optionOfDropDown">हिन्दी</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Help Centre</div>
+                        <div>Corporate Information</div>
+                    </div>
+                    <div>
+                        <div>Terms of Use</div>
+                    </div>
+                    <div>
+                        <div>Privacy</div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
