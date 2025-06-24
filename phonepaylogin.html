@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Paytm</title>
+</head>
+<style>
+    body{
+        margin:0px;
+
+    }
+    .mainSection {
+        height: 100%;
+        /* width: 100%; */
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        /* font-weight: 400; */
+
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 80px;
+    }
+
+    .zeroOneSection {
+        width: 50%;
+        height: 100vh;
+        margin-top: 100px;
+
+        margin: auto;
+        padding: 0px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        background-color: #002970;
+
+
+
+    }
+    .imageLogo{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom:40px;
+    }
+    .firstHalfSection {
+        width: 50%;
+        margin-top: 70px;
+        margin-left: 170px;
+    }
+
+    .mainTitleOfPage {
+        font-size: 26px;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        color: #444;
+
+
+    }
+
+    .subHeadingOfPage {
+        font-size: 14px;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        color: #00b9f5;
+        margin-bottom: 30px;
+
+    }
+
+    .secondHalfSection {
+        width: 80%;
+    }
+
+    .fieldContainer {
+        width: 95%;
+        margin-top: 10px;
+
+
+
+
+    }
+
+    .input-text {
+        margin-bottom: 5px;
+        width: 100%;
+        outline: none;
+        padding: 8px;
+        font-size: 16px;
+        color: #182233;
+        font-weight: bold;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        cursor: pointer;
+    }
+
+    #email-mobile-login {
+        color: #536e92;
+    }
+
+    .passwordContainer {
+        margin-bottom: 5px;
+        width: 95%;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #536e92;
+        font-weight: bold;
+    }
+
+
+
+    .loginNote {
+        margin-top: 10px;
+    }
+
+    .strong {
+        /* text-transform: uppercase; */
+        color: #536e92 !important;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        font-size: 12px;
+        line-height: 1.33;
+        font-family: Inter, Sans-Serif;
+    }
+
+    .lighter {
+        color: #536e92;
+        font-size: 14px;
+    }
+
+    .button {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .signInButton {
+        padding: 12px 45px;
+        background-color: #536e92;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: Inter, sans-serif;
+        border-radius: 25px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        border: none;
+
+    }
+
+    .forgottenPassword {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .forgotPasswordText {
+        color: #00b9f5;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: sans-serif;
+        display: flex;
+        /* justify-content: space-between;   */
+
+    }
+
+    .bySignning {
+        margin-top: 10px;
+    }
+
+    .privacyPolicy {
+        color: #444;
+        font-size: 12px;
+        font-family: Inter, sans-serif;
+
+    }
+
+    .youAgree {
+        color: #00b9f5;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .qrLogin {
+        padding: 16px 32px 20px 32px;
+        background-color: #f6f8fc;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap:10px;
+    }
+
+    .loginThrough {
+        font-size: 14px;
+        color: #29394f;
+        font-weight: 700;
+        font-family: Inter, sans-serif;
+
+    }
+
+    .clickHere {
+        font-size: 14px;
+        color: #00b9f5;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 5px;
+        font-family: Inter,sans-serif;
+
+    }
+
+    .newToPaytm {
+        width: 100%;
+        margin-top: 25px;
+        padding: 25px 0;
+        background-color: #e1f8ff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+        border-radius: 10px;
+    }
+
+    .loginThroughQr{
+        display: flex;
+        flex-direction: column;
+        justify-content: fle;
+    }
+
+    .paytmClass {
+        font-size: 16px;
+        font-family: Inter, sans-serif;
+        color: #444;
+        font-weight: 700;
+    }
+
+    .createAccount {
+        font-family: Inter, Sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        color: #00b9f5;
+    }
+</style>
+
+<body>
+    <div class="mainSection">
+        <div class="zeroOneSection">
+           
+            <div class=" imageWallet">
+                <div class="imageLogo">
+                    <img src=" https://dashboard.paytm.com/login/assets/p4b-logo-white.svg" >
+                </div>
+                <img
+                    src="https://business.paytm.com/s3assets/images/ump-login-assets/employee-benefits-ump-login-banner-img.png">
+            </div>
+
+
+        </div>
+        <div class="firstHalfSection">
+            <div class="mainTitleOfPage"> Login with your Paytm account</div>
+            <div class="subHeadingOfPage"> Paytm App user? No need to create a new account
+            </div>
+
+            <form>
+                <div class="secondHalfSection">
+
+                    <div class="fieldContainer">
+
+
+                        <input type="text" class="input-text" id="email-mobile-login"
+                            placeholder="Enter your Mobile Number or Email">
+
+                    </div>
+                    <div class="passwordContainer">
+                        <input type="text" id="password-login" class="input-text" placeholder="Paytm Password">
+                        <!-- <span class="eye-icon">👁️</span>/ -->
+                    </div>
+                    <div class="loginNote">
+                        <span class="strong">PLEASE NOTE:</span>
+                        <span class="lighter">Paytm and Paytm for Buisness Dashboard password are same.</span>
+                    </div>
+                    <div class="button">
+                        <button class="signInButton">Sign in Securely</button>
+                        <div class=" forgottenPassword">
+                            <span class="forgotPasswordText">Forgot Password</span>
+                        </div>
+                    </div>
+                    <div class="bySignning">
+                        <span class="privacyPolicy">
+                            By signing in, you agree to our
+                            <a href="#" class="youAgree">privacy policy</a>
+                            and
+                            <a href="#" class="youAgree">terms of use</a>
+
+                        </span>
+                    </div>
+                    <div class="qrLogin">
+                        <img src="https://accounts.paytm.com/oauth-js-sdk/a55c45f4d0052e012d28e6fa0c278943.svg">
+                        <div class="loginThroughQr">
+                            <div class="loginThrough">
+                                OR Login through QR Code
+                            </div>
+    
+                            <div class="clickHere">
+                                
+                                <a>Click here</a>
+                            </div>
+                        </div>
+                        <!-- <div class="loginThrough">
+                            OR Login through QR Code
+                        </div>
+
+                        <div class="clickHere">
+                            <br>
+                            <a>Click here</a>
+                        </div> -->
+                    </div>
+
+                    <div class="newToPaytm">
+                        <span class="paytmClass">
+                            New to Paytm? <a class="createAccount"> Create an Account </a>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

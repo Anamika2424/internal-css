@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .mainSection{
+            height: 100vh;
+        }
+        .headerSection{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: navy;
+            color: #ffffff;
+            align-items: center;
+        }
+        .blogSection{
+            padding-left: 15px;
+            /* color: navy; */
+            /* font-weight: 600; */
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .secondHalfSection{
+            display: flex;
+            gap: 10px;
+            padding-right: 15px;
+
+        }
+        .thirdSection{
+            /* height: 100vh; */
+            display: flex;
+            justify-content: center;
+            /* background-color: gainsboro; */
+
+        }
+        .outerBox{
+            margin-top: 50px;
+            width:25%;
+            height: 60vh;
+            border: 1px solid black;
+            border: none;
+            /* background-color: gainsboro; */
+            background-color:whitesmoke;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px #000;
+            border: none;
+
+        }
+        .title{
+            font-size: 30px;
+            margin-bottom: 5px;
+            /* color: navy; */
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 8px;
+
+        }
+        .subTitle{
+            font-size: 17px;
+        }
+        .mainTitle{
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: navy;
+            font-weight: 600;
+        }
+        .labelText{
+            font-size: 18px;
+            margin-bottom: 15px;
+            
+        }
+        .inputBox{
+            width: 95%;
+            padding: 8px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 28px;
+            margin-top: 10px;
+        }
+        .btnClass{
+            width: 98%;
+            padding: 8px;
+            /* padding: 8px; */
+            background-color: navy;
+            color: #ffffff;
+            border-radius: 8px 10px;
+            border: none;
+            text-decoration: underline;
+            /* font-weight: 600; */
+        }
+        .loginText{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .registerText{
+            font-size: 17px;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="mainSection">
+        <div class="headerSection">
+            <div class="blogSection">Blogs</div>
+            <div class="secondHalfSection">
+                <div class="loginText">Login</div>
+                <div class="registerText">Register</div>
+            </div>
+        </div>
+        <div class="thirdSection">
+            <div class="outerBox">
+                <div class="title">Blogs</div>
+                <div class="subTitle">Publish your passions , your way...</div>
+                <hr>
+                <div class="mainTitle">Register</div>
+                <div>
+                    <label class="labelText">Name</label>
+                    <input type="text" class="inputBox" placeholder="Firstname Lastname">
+                    <label class="labelText">Email id</label>
+                    <input type="text" class="inputBox" placeholder="test@gmailcom">
+                    <label class="labelText">Password</label>
+                    <input type="password" class="inputBox" placeholder="Test@123">
+                    <button class="btnClass">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

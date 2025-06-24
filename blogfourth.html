@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .mainSection {
+            background-color: lightgray;
+            height: 100vh;
+        }
+
+        .headerSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: navy;
+            color: #ffffff;
+
+        }
+
+        .firstHalf {
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondHalfSection {
+            margin-top: 20px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            border-bottom: 2px solid gray;
+        }
+
+        .blogSection {
+            font-size: 30px;
+            color: black;
+            font-weight: 600;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .subTitle {
+            font-size: 18px;
+            margin-bottom: 10px;
+            /* border-bottom: 2px solid gray; */
+        }
+
+        .createBtn {
+            padding: 9px;
+            background-color: navy;
+            color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+        }
+        .thirdSection{
+            /* width: 80%; */
+            /* margin: auto; */
+            /* height: 70vh; */
+            margin-top: 30px;
+        }
+        .outerLoginBox{
+            border-radius: 7px;
+            /* margin-top: 20px; */
+            width: 80%;
+            margin: auto;
+            border: 1px solid black;
+            background-color: #ffffff;
+            height: 40vh;
+            padding: 10px;
+            box-shadow: 1px 1px 2px #000;
+            border: none;
+            
+        }
+        .mainTitle{
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .btnSection{
+            display: flex;
+            align-items: center;
+            gap:10px;
+        }
+        .thumbBtn
+        {
+            padding: 10px;
+            background-color:green ;
+            color:#ffffff;
+            border: none;
+            font-weight: bold;
+        }
+        .thumbBtnSecond{
+            padding: 10px;
+            background-color:yellowgreen;
+            color: #ffffff;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mainSection">
+        <div class="headerSection">
+            <div>Blogs</div>
+            <div class="firstHalf">
+                <div>Ishwari Kanase <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div>Logout</div>
+            </div>
+        </div>
+        <div class="secondHalfSection">
+            <div class="outerBox">
+                <div class="blogSection">Blogs</div>
+                <div class="subTitle">Publish your passions , your way...</div>
+            </div>
+            <div>
+                <button class="createBtn">+Create new post</button>
+            </div>
+        </div>
+        <div class="thirdSection">
+            <div class="outerLoginBox">
+                <div class="mainTitle">Hello World</div>
+                <div> Created By ishwari.kanase@gmail.com</div>
+                <div>Created At 1st Dec,2021</div>
+                <hr>
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                        desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="btnSection">
+                    <button class="thumbBtn"><i class="fa fa-thumbs-up" aria-hidden="true">0</i>
+                    </button>
+                    <button class="thumbBtnSecond"><i class="fa fa-thumbs-down" aria-hidden="true">0</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

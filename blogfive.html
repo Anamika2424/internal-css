@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        body{
+            margin: 0px;
+        }
+        .mainSection{
+            background-color: lightgray;
+            height: 100vh;
+        }
+        .headerSection{
+            display: flex;
+            justify-content: space-between;
+            align-items: center ;
+            padding: 15px;
+            background-color: navy;
+            color: #ffffff;
+        }
+        .blogSection{
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+        .firstHalf{
+            display: flex;
+            gap: 20px;
+
+        }
+        .secondHalfSection{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .outerBox{
+            background-color: #ffffff;
+            /* color: ; */
+            padding: 10px;
+            /* margin-top: 20px; */
+            width: 80%;
+            margin: auto;
+            border: 1px solid black;
+            height: 50vh;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px #000;
+            border: none;
+        }
+        .innerBox{
+            width: 100%;
+            border-radius: 5px;
+            height: 35vh;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            /* border: ; */
+            box-shadow: 1px 1px 2px #000;
+
+        }
+        .titleSection{
+            font-size: 26px;
+            color: grey;
+            font-weight: 600;
+        }
+        .btnSection{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            /* padding: 8px 10px;
+            background-color: navy;
+            color: #ffffff;
+            border-radius: 7px; */
+            gap: 10px;
+        }
+        .btnCancel{
+            padding: 8px 10px;
+            background-color: navy;
+            font-weight: 600;
+            border: none;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        .innerText{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainSection">
+        <div class="headerSection">
+            <div class="blogSection">Blogs</div>
+            <div class="firstHalf">
+                <div>Ishwari Kanse <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                <div>Logut</div>
+            </div>
+        </div>
+        <div class="secondHalfSection">
+            <div class="outerBox">
+                <div class="titleSection">Title</div>
+                <hr>
+                <div class="innerBox">
+                    <div class="innerText">Description</div>
+                </div>
+                <div class="btnSection">
+                    <button class="btnCancel">Cancel</button>
+                    <button class="btnCancel">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks official</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .mainSection {}
+
+        .headerContainer {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .firstHalf {
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            font-size: 17px;
+
+        }
+
+        .secondHalf {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .textBox {
+            padding: 10px;
+            border-radius: 24px;
+        }
+
+        .thirdHalf {
+            /* width: 80%; */
+            /* margin: auto; */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            align-items: center;
+            background-color: #1e3932;
+            color: #ffffff;
+        }
+
+        .innerSection {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title {
+            font-size: 28px;
+        }
+
+        .know {
+            padding: 10px 20px;
+            background-color: #1e3932;
+            color: #ffffff;
+            /* border: 1px white; */
+            /* border-color: white; */
+            /* background: ; */
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .images {
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+
+            /* display: flex; */
+        }
+
+        .fourthSection {
+            margin-top: 30px;
+        }
+
+        .beverages {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            gap: 55px;
+
+
+        }
+
+        .menuNames {
+            /* display: flex; */
+            width: 80%;
+            margin: auto;
+        }
+
+        .foodItems {
+            display: flex;
+            gap: 154px;
+            font-size: 15px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .fifthSection {
+            margin-top: 20px;
+            height: 40vh;
+
+            /* background-color: ; */
+            /* background-color: #faf6ee; */
+            /* background-color: #fff; */
+            background-color: #f1f1f1;
+            position: relative;
+
+
+        }
+
+        .leafImage {
+            /* left:30%; */
+            position: absolute;
+            top: 0;
+            margin-top: -15px;
+            right: 0;
+            width: 57px;
+            height: 70px;
+
+        }
+
+        .innerPart {
+            /* margin-top: 30px; */
+            width: 25%;
+            height: 15vh;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            border: none;
+        }
+
+
+
+        .sixthSection {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .coffeeImage {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+        }
+
+        .note {
+            font-size: 20px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .subNote {
+            font-family: Pike_Regular, Helvetica, sans-serif;
+            color: rgb(33 37 41 / 75%);
+        }
+
+        .seventhSection {
+            height: 50vh;
+            background-color: #f1f1f1;
+            margin-top: 30px;
+            padding: 15px;
+        }
+
+        .eiththSection {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .backgroundImage {
+            width: 80%;
+            margin: auto;
+            background-image: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%);
+        }
+
+        .teaImage {
+            margin-top: 20px;
+            border-radius: 8px;
+            opacity: 90%;
+        }
+
+        .itemInfo {
+            font-size: 25px;
+            color: #1e3932;
+            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .footerSection {
+
+            margin-top: 50px;
+
+            font-family: SoDoSans_Light, Helvetica, sans-serif;
+
+            display: flex;
+            background-color: #0e382c;
+            color: #bbb;
+            height: 60vh;
+            /* gap: 20px; */
+            padding: 70px;
+        }
+
+        .footerMenus {
+            list-style-type: none;
+            line-height: 50px;
+            font-size: 15px;
+            font-weight: 200;
+        }
+
+        .footerElement {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .footerMenuOne {
+            display: flex;
+            gap: 20px;
+            font-family: SoDoSans_Light, Helvetica, sans-serif;
+            font-size: 12px;
+            /* margin-left: 80px; */
+            /* SoDoSans_Light, Helvetica, sans-serif !im */
+        }
+
+        .secondFooter {
+
+            /* border-left-width: 0; */
+            /* border-right-width:0 ; */
+            border-top: 1px solid #a0a0a0;
+            /* background-color: #0e382c; */
+            /* color: #bbb; */
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+
+            padding: 20px;
+
+        }
+
+        .rightFooter {
+            font-size: 12px;
+            font-family: SoDoSans_Light, Helvetica, sans-serif;
+            /* margin-right: 50px; */
+        }
+
+        .footerPart {
+            background-color: #0e382c;
+            color: #bbb;
+
+
+        }
+
+        .discover {
+            font-weight: 600;
+            font-size: 15px;
+            color: #00754a;
+            font-family: SoDoSans_Light, Helvetica, sans-serif;
+
+
+        }
+
+        .fifthSection {
+            height: 40vh;
+            background-color: #f1f1f1;
+
+        }
+
+        .heads {
+            padding: 13px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+
+        .barista {
+            font-size: 25px;
+            color: #1e3932;
+            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .view {
+            font-weight: 600;
+            font-size: 14px;
+            color: #00754a;
+            font-family: SoDoSans_Light, Helvetica, sans-serif;
+        }
+
+        .coffeeAd {
+            border: none;
+            /* display: flex; */
+            /* justify-content: start; */
+            /* border: 1px solid black; */
+            width: 28%;
+            /* margin: left; */
+            /* padding-right: 20px; */
+            /* padding-left: 20px; */
+            height: 16vh;
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 20px;
+            gap: 30px;
+
+        }
+
+        .card {
+            padding: 15px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .cardImage {
+            width: 80px;
+            height: 80px;
+            /* padding: 15px; */
+            border-radius: 5px;
+
+        }
+
+        .cardEnd {
+            display: flex;
+        }
+
+        .price {
+            font-family: SoDoSans_Light, Helvetica, sans-serif;
+            color:#000;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .addBtn {
+            padding: 10px 20px;
+            border-radius: 24px;
+            background-color:#00754a;
+            color: #fff;
+            font-size: 13px;
+            font-weight: bold;
+            border: none;
+            
+        }
+        .imageText{
+            display: flex;
+            gap:30px;
+        }
+        .cardEnd{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainSection">
+        <div class="headerContainer">
+            <div class="firstHalf">
+                <img src="https://www.starbucks.in/assets/icon/logo.png">
+                <div>Home</div>
+                <div>Gift</div>
+                <div>Order</div>
+                <div>Pay</div>
+                <div>Store</div>
+
+            </div>
+            <div class="secondHalf">
+                <div> <img src="https://www.starbucks.in/assets/icon/search.svg"><input type="text" class="textBox"
+                        placeholder="Looking for something specific"></div>
+                <img src="https://www.starbucks.in/assets/icon/account_thin.svg">
+            </div>
+        </div>
+        <div class="thirdHalf">
+            <div class="innerSection">
+                <div class="title">Starbucks</div>
+                <div><button class="know">Know more</button></div>
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src=" https://preprodtsbstorage.blob.core.windows.net/cms/uploads/BANNER_BG_WEB_452993d1ad.png" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src=" https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Refreshers_dashboard_02_1_86726dda31.png" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://preprodtsbstorage.blob.core.windows.net/cm…oads/Banner_Background_2256x488_1_0c34e62d77.webp  " style="width:100%">
+                <div class="text">Caption Two</div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          Step 2) Add CSS:
+        <!-- <div>
+            <img src="https://preprodtsbstorage.blob.core.windows.net/cm…oads/Banner_Background_2256x488_1_0c34e62d77.webp
+            " width="00px" height="200px">
+        </div> -->
+        <div class="fourthSection">
+            <div class="beverages">
+                <!-- <ul class="menus"> -->
+                <div> <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Bestseller.jpg"
+                        class="images"></div>
+                <div> <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Drinks.jpg"
+                        class="images"></div>
+                <div> <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Food.jpg" class="images">
+                </div>
+                <div> <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/Merchandise.jpg"
+                        class="images"></div>
+                <div> <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/CoffeeAtHome.jpg"
+                        class="images"></div>
+                <div> <img src="https://starbucksstatic.cognizantorderserv.com/Category/Small/ReadyToEat.jpg"
+                        class="images"></div>
+
+                <!-- </ul> -->
+            </div>
+            <div class="menuNames">
+                <div class="foodItems">
+                    <div>Bestseller</div>
+                    <div>Drinks</div>
+                    <div>Food</div>
+                    <div>Merchandise</div>
+                    <div>Coffee At Home</div>
+                    <div>Ready to Eat</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="fifthSection">
+            <div><img src="https://www.starbucks.in/assets/icon/greyleafright.svg" class="leafImage"></div>
+            <div class="heads">
+                <div class="barista">Barista Recommends</div>
+                <div class="view">View Menu</div>
+            </div>
+            <div class="card">
+                <div class="coffeeAd">
+                    <div class="imageText">
+                        <div><img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100501.webp"
+                                class="cardImage"></div>
+                        <div>
+                            <img src="https://www.starbucks.in/assets/icon/veg.svg" width="20%" height="20%">
+                            <div class="note">Java Chip Frappuccino</div>
+                            <div class="subNote">TALL(345 ml).392 kcal</div>
+                        </div>
+                    </div>
+                    <div class="cardEnd">
+                        <div class="price">₹ 420.00</div>
+                        <div><button class="addBtn">Add Item</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="seventhSection">
+            <div class="eiththSection">
+                <div class="itemInfo">Learn more about the world of coffee!</div>
+                <div class="discover">Discover More</div>
+            </div>
+            <div class="backgroundImage">
+                <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg"
+                    width="100%" height="350px" class="teaImage">
+            </div>
+
+        </div>
+        <div>
+            <div class="footerPart">
+                <div class="footerSection">
+                    <!-- <div class="sectionLast"> -->
+                    <!-- <div class="footerClass"> -->
+                    <div>
+                        <img src="https://www.starbucks.in/assets/icon/logo.png">
+                    </div>
+                    <div>
+                        <ul class="footerMenus">
+
+                            <div class="footerElement">
+                                <li> About Us</li>
+                            </div>
+                            <li> Our Heritage</li>
+                            <li> Coffeehouse</li>
+                            <li> Our Company</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footerMenus">
+                            <div class="footerElement">
+                                <li> Responsibility</li>
+                            </div>
+                            <li> Diversity</li>
+                            <li> Community</li>
+                            <li> Ethical Sourcing</li>
+                            <li> Environmental Stewardship</li>
+                            <li> Learn More</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footerMenus">
+                            <div class="footerElement">
+                                <li> Responsibility</li>
+                            </div>
+                            <li> Diversity</li>
+                            <li> Community</li>
+                            <li> Ethical Sourcing</li>
+                            <li> Environmental Stewardship</li>
+                            <li> Learn More</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footerMenus">
+                            <div class="footerElement">
+                                <li> Quick Links</li>
+                            </div>
+                            <li> Privacy Policy</li>
+                            <li> FAQs</li>
+                            <li> Starbucks India Mobile App Terms of Use</li>
+                            <li> Customer Service</li>
+                            <li> Delivery</li>
+                            <li> Loyalty Program Terms and Conditions</li>
+                            <li> Beverage Subscription</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footerMenus">
+                            <div class="footerElement">
+                                <li>SOCIALMEDIA</li>
+                            </div>
+                            <li>
+                                <img src="https://www.starbucks.in/assets/icon/instagram.svg">
+                                <img src="https://www.starbucks.in/assets/icon/facebook.svg">
+                                <img src="https://www.starbucks.in/assets/icon/twitter.svg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footerMenus">
+                            <li> <img src="https://www.starbucks.in/assets/images/appstoreiOS.png"></li>
+                            <li><img src="https://www.starbucks.in/assets/images/appstoreAndroid.png"></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="secondFooter">
+                    <!-- <div class="secondLast"> -->
+                    <div class="footerMenuOne">
+                        <div> Web Accessiblity | </div>
+                        <div> Privacy Statement |</div>
+                        <div> Terms of Use |</div>
+                        <div> Contact Us</div>
+                    </div>
+
+                    <div class="rightFooter">
+                        © 2025 Starbucks Coffee Company. All rights reserved
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

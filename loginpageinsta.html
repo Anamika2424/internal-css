@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+</head>
+<style>
+    .mainSection {
+        /* width: 100%; */
+        background-color: #fff;
+        text-align: center;
+        height: 100vh;
+        /* display:flex;
+        justify-content: center; */
+        /* margin-top: 50px; */
+        /* margin: auto; */
+
+    }
+
+    .headerOfPage {
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        height: 51px;
+        margin-top: 60px;
+        font-weight: bold;
+
+    }
+
+    .firstHalfSection {
+        text-align: center;
+        /* margin-top: 100px; */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px    ;
+        width: 100%;
+
+    }
+
+
+
+    .outerLoginBox {
+        /* margin-top: 90px; */
+        width: 25%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid grey;
+        /* border-right-style: solid; */
+        /* border-color: rgb(46, 44, 44); */
+
+        /* border:2px solid gray; */
+        /* border-width: 30%; */
+    }
+
+    .loginBox {
+        /* width: 30%; */
+        /* border-radius: 8px; */
+        /* width: 40%; */
+        margin: auto;
+        /* border: 1px solid grey; */
+        text-align: center;
+        align-items: stretch;
+
+    }
+
+    .logInBox {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        /* width: ; */
+    }
+
+    .inputBox {
+        width: 64%;
+        padding: 13px;
+        font-size: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color:rgb(252, 250, 250) ;
+        /* color: rgb(192 185 185); */
+        margin: auto;
+        margin-top: 10px;
+        /* border: none; */
+    }
+
+    .logInButton {
+        width: 72%;
+        padding: 8px;
+        font-size: 14px;
+        background-color: rgba(0, 149, 246);
+        color: rgb(255, 255, 255);
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .loginPage {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .facebookLogin {
+        font-weight: 600;
+        color: rgb(0, 149, 246);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        /* margin-bottom: 20px; */
+    }
+
+    .facebookImage {
+        width: 28px;
+        height: 28px;
+    }
+
+    .password {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .forgotPassword {
+        color: rgb(0, 55, 107);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        /* margin-top: 15px; */
+    }
+
+    .signInDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 20px; */
+        border: 1px solid grey;
+        /* padding-top: 10px; */
+        width: 25%;
+        height: 50px;
+        margin: auto;
+        margin-top: 14px;
+    }
+
+    .signIn {
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        border: 1px grey;
+    }
+
+    .signUp {
+        color: rgb(0, 149, 246);
+        font-weight: 600;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        font-size: 16px;
+        /* border: 2px solid grey; */
+
+    }
+
+    .getApp {
+        text-align: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .app {
+
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .imageStyle {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .googlePlay {
+        width: 134px;
+        height: 40px;
+        margin-top: 10px;
+
+    }
+
+    .footerClass {
+        margin-top: 90px;
+    }
+
+    .footerSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 10  0px; */
+    }
+
+    .listUl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: rgb(115, 115, 115);
+        font-size: 10px;
+        list-style-type: none;
+    }
+
+    .secondFooter {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        gap: 10px;
+        font-size: 14px;
+        list-style-type: none;
+        color: rgb(115, 115, 115);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .dropDownlist {
+        color: rgb(115, 115, 115);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        border: #ccd0d5;
+    }
+</style>
+
+<body>
+    <div class="mainSection">
+
+        <div class="firstHalfSection">
+
+            <div class="outerLoginBox">
+                <div class="headerOfPage">Instagram</div>
+
+                <div class="loginBox">
+                    <div class="logInBox">
+                        <input type="text" class="inputBox" placeholder="Phone number ,username,or email">
+                    </div>
+                    <div class="logInBox">
+                        <input type="password" class="inputBox" placeholder="Password">
+                    </div>
+                    <div class="logInBox">
+                        <button class="logInButton">Log in</button>
+                    </div>
+                    <div class="loginPage">
+
+                        <span class="facebookLogin"><img
+                                src=" https://img.freepik.com/premium-vector/vector-blue-social-media-logo_1080184-225.jpg?semt=ais_hybrid"
+                                class="facebookImage">Log
+                            in with facebook</span>
+                    </div>
+
+                    <div class="password">
+                        <span class="forgotPassword">
+                            Forgot password?
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="signInDiv">
+            <span class="signIn">
+                Don't have an account?<a href="#" class="signUp"> Sign up</a>
+            </span>
+        </div>
+        <div class="getApp">
+            <span class="app">
+                Get the app.
+            </span>
+        </div>
+        <div class="imageStyle">
+            <span>
+                <img src="https://static.cdninstagram.com/rsrc.php/v4/yz/r/c5Rp7Ym-Klz.png " class="googlePlay">
+                <img src=" https://static.cdninstagram.com/rsrc.php/v4/yu/r/EHY6QnZYdNX.png" class="googlePlay">
+            </span>
+        </div>
+
+
+
+
+        <div class="footerClass">
+            <footer class="footerSection">
+                <ul class="listUl">
+                    <li>Meta</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Jobs</li>
+                    <li>Help</li>
+                    <li>API</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Locations</li>
+                    <li>Instagram Lite</li>
+                    <li>Threads</li>
+                    <li>Contact Uploading & Non-Users</li>
+                    <li>Meta verified</li>
+
+                </ul>
+                <ul class="secondFooter">
+
+                    <select class="dropDownlist">
+                        <option>Hindi</option>
+                        <option>English</option>
+                        <option>Marathi</option>
+                        <option>Spanish</option>
+                        <option>Mandarian</option>
+                        <option>German</option>
+                        <option>Marathi</option>
+                        <option>French</option>
+
+                    </select>
+                    <li>2025 Instagram from Meta</li>
+
+
+
+                </ul>
+            </footer>
+
+        </div>
+    </div>    
+</body>
+
+</html>

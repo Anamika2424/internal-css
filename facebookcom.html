@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>Facebook - log in or sign up</title>
+    <style>
+        .mainSection {
+            background-color:#f2f4f7;   
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .firstHalfSection {
+            width: 30%;
+        }
+
+        .headerOfPage {
+            color: #0077b5;
+            font-size: 55px;
+            font-weight: bold;
+        }
+
+        .subHeaderOfPage {
+            font-size: 28px;
+        }
+
+        .secondHalfSection {
+            /* display: flex;
+            justify-content: center; */
+            text-align: center;
+            width: 50%;
+        }
+
+        .outerLoginBox {
+            width: 40%;
+
+        }
+
+        .loginBox {
+            border-radius: 10px;
+            /* border: 1px solid silver; */
+            padding: 15px;
+            /* width: 50%; */
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .marginTop {
+            margin-top: 15px;
+            /* display: flex;
+            justify-content: center; */
+            text-align: center  ;
+        }
+
+        .inputBox {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            font-size: 17px;
+        }
+
+        .forgottenPassword {
+            color: #0866ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .loginButton {
+            width: 100%;
+            padding: 10px;
+            background-color: #0866ff;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .createNewAccount {
+            padding: 10px;
+            background-color: #42b72a;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+            border-radius: 5px;
+        }
+
+        .createAPage {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainSection">
+        <div class="firstHalfSection">
+            <div class="headerOfPage">facebook</div>
+            <div class="subHeaderOfPage marginTop">Facebook helps you connect and share with the people in your life.
+            </div>
+        </div>
+        <div class="secondHalfSection">
+            <div class="outerLoginBox">
+                <div class="loginBox">
+                    <div class="marginTop"><input type="text" class="inputBox"
+                            placeholder="Email address or phone number" /></div>
+                    <div class="marginTop"><input type="password" class="inputBox" placeholder="Password" /></div>
+                    <div class="marginTop"><button class="loginButton">Log in</button></div>
+                    <div class="marginTop"><a href="#" class="forgottenPassword">Forgotten password?</a></div>
+                    <hr />
+                    <div class="marginTop"><button class="createNewAccount">Create new account</button></div>
+                </div>
+                <div class="marginTop"><a href="#" class="createAPage">Create a Page</a> for a celebrity, brand or
+                    business.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

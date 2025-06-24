@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Profile | Tata Starbucks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+    body {
+        background-color: #fff;
+    }
+
+    /* body {
+        width: 80%;
+        margin: auto;
+    } */
+
+    .mainSection {}
+
+    .firstHalfSection {
+        justify-content: space-around;
+        /* margin: 0px; */
+        /* width: 80%; */
+        /* margin: auto; */
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between */
+        /* padding: 15px; */
+        /* font-weight: bold; */
+        /* border: 1px solid; */
+        /* padding: 10px; */
+        box-shadow: 3px 3px 3px #888888;
+    }
+
+    .headerContainer {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .searchBar {
+        display: flex;
+        /* gap: 70px; */
+        gap: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .headerMenus {
+        font-size: 17px;
+        color: #000;
+        /* font-family: Arial, Helvetica, sans-serif;s */
+
+    }
+
+    .headerMenus:hover {
+        color: green;
+    }
+
+    .searchBtn {
+        color: #000;
+        padding: 10px 30px;
+        border-radius: 24px;
+        background-color: #fff;
+        border: 1px light black;
+        display: flex;
+        align-items: center;
+    }
+
+    .profileAc {
+        display: flex;
+        justify-content: start;
+        margin-left: 14%;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .secondHalfSection {
+        height: 70vh;
+        /* background-color: #dfdfdf; */
+        background-color: #faf6ee;
+        /* background-image: url(https://www.starbucks.in/assets/images/leaf_gold.svg); */
+        /* background-image: url(https://www.starbucks.in/assets/images/profileDP.svg); */
+    }
+
+    .background-image {
+        position: absolute;
+        left: 0;
+        margin-top: -40px;
+    }
+
+    .mainProfile {
+        position: relative;
+        border: 6px solid #fff;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        border-color: rgb(203, 162, 88);
+        border-radius: 100%;
+        max-width: 300px;
+        margin-top: 150px;
+    }
+
+    .imageSection {
+        /* position: relative; */
+        background-position: center;
+        /* height: 210px; */
+        /* max-width: 300px; */
+        /* margin-top: 10%; */
+        margin-left: 38%;
+        /* margin-top: 100px; */
+    }
+
+    .imageHead {
+        font-size: 26px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+    }
+
+    .logIn {
+        padding: 10px 30px;
+        border-radius: 24px;
+        background-color: black;
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 33px;
+    }
+
+    .cornerImage {
+        position: absolute;
+        right: 0;
+        margin-top: -40px;
+    }
+
+    .iconThird {
+        position: absolute;
+        right: 10px;
+        top: 25%;
+        margin-right: 80px;
+    }
+
+    .thirdSection {
+
+        width: 60%;
+        display: flex;
+        /* text-align: center; */
+        justify-content: space-between;
+        margin-top: 20px;
+        border-bottom: 0.5px solid rgb(0 0 0 / 20%);
+        padding: 20px;
+        margin-left: 18%;
+    }
+
+    .helpSection {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .centerHelp {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+
+    }
+
+    .footerSection {
+
+        margin-top: 50px;
+
+        font-family: SoDoSans_Light, Helvetica, sans-serif;
+
+        display: flex;
+        background-color: #0e382c;
+        color: #bbb;
+        height: 60vh;
+        /* gap: 20px; */
+        padding: 70px;
+    }
+
+    .footerMenus {
+        list-style-type: none;
+        line-height: 50px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .footerElement {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .footerMenuOne {
+        display: flex;
+        gap: 20px;
+        font-family: SoDoSans_Light, Helvetica, sans-serif;
+        font-size: 12px;
+        /* margin-left: 80px; */
+        /* SoDoSans_Light, Helvetica, sans-serif !im */
+    }
+
+    .secondFooter {
+
+        /* border-left-width: 0; */
+        /* border-right-width:0 ; */
+        border-top: 1px solid #a0a0a0;
+        /* background-color: #0e382c; */
+        /* color: #bbb; */
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+
+        padding: 20px;
+
+    }
+
+    .rightFooter {
+        font-size: 12px;
+        font-family: SoDoSans_Light, Helvetica, sans-serif;
+        /* margin-right: 50px; */
+    }
+    .footerPart{
+        background-color: #0e382c;
+        color: #bbb;
+
+
+    }
+</style>
+
+<body>
+    <div class="mainSection">
+        <div class="firstHalfSection">
+            <div class="headerContainer">
+                <div>
+                    <img src="https://www.starbucks.in/assets/icon/logo.png" width="40px">
+                </div>
+                <div class="headerMenus">Home</div>
+                <div class="headerMenus">Gift</div>
+                <div class="headerMenus">Order</div>
+                <div class="headerMenus">Pay</div>
+                <div class="headerMenus">Store</div>
+
+            </div>
+            <div class="searchBar">
+                <div>
+
+                    <button class="searchBtn">
+
+                        <img src="https://www.starbucks.in/assets/icon/search.svg">
+
+                        Looking for something else?</button>
+                    <!-- <input type="text" placeholder="Looking for something else?"> -->
+                </div>
+                <div>
+                    <img src="https://www.starbucks.in/assets/icon/account_thin.svg">
+                </div>
+            </div>
+        </div>
+        <div class="profileAc">Profile > Account</div>
+        <div class="secondHalfSection">
+            <div class="imageSection">
+                <img src="https://www.starbucks.in/assets/images/leaf_gold.svg" class="background-image">
+                <img src=" https://www.starbucks.in/assets/images/profileDP.svg" class="mainProfile">
+                <div class="imageHead"> Welcome to Starbucks</div>
+                <div><button class="logIn">Log in or Sign Up</button></div>
+                <img src="https://www.starbucks.in/assets/images/dots_gold.svg" class="cornerImage">
+                <img src="https://www.starbucks.in/assets/icon/settings_icon.svg" class="iconThird">
+            </div>
+        </div>
+        <div class="thirdSection">
+            <div class="helpSection">
+                <img src="https://www.starbucks.in/assets/icon/help_centre.svg">
+                <div class="centerHelp">HELP CENTER</div>
+            </div>
+            <div>
+                <img src="https://www.starbucks.in/assets/icon/arrow_right.svg">
+            </div>
+        </div>
+        <div class="footerPart">
+            <div class="footerSection">
+                <!-- <div class="sectionLast"> -->
+                <!-- <div class="footerClass"> -->
+                <div>
+                    <img src="https://www.starbucks.in/assets/icon/logo.png">
+                </div>
+                <div>
+                    <ul class="footerMenus">
+
+                        <div class="footerElement">
+                            <li> About Us</li>
+                        </div>
+                        <li> Our Heritage</li>
+                        <li> Coffeehouse</li>
+                        <li> Our Company</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footerMenus">
+                        <div class="footerElement">
+                            <li> Responsibility</li>
+                        </div>
+                        <li> Diversity</li>
+                        <li> Community</li>
+                        <li> Ethical Sourcing</li>
+                        <li> Environmental Stewardship</li>
+                        <li> Learn More</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footerMenus">
+                        <div class="footerElement">
+                            <li> Responsibility</li>
+                        </div>
+                        <li> Diversity</li>
+                        <li> Community</li>
+                        <li> Ethical Sourcing</li>
+                        <li> Environmental Stewardship</li>
+                        <li> Learn More</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footerMenus">
+                        <div class="footerElement">
+                            <li> Quick Links</li>
+                        </div>
+                        <li> Privacy Policy</li>
+                        <li> FAQs</li>
+                        <li> Starbucks India Mobile App Terms of Use</li>
+                        <li> Customer Service</li>
+                        <li> Delivery</li>
+                        <li> Loyalty Program Terms and Conditions</li>
+                        <li> Beverage Subscription</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footerMenus">
+                        <div class="footerElement">
+                            <li>SOCIALMEDIA</li>
+                        </div>
+                        <li>
+                            <img src="https://www.starbucks.in/assets/icon/instagram.svg">
+                            <img src="https://www.starbucks.in/assets/icon/facebook.svg">
+                            <img src="https://www.starbucks.in/assets/icon/twitter.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footerMenus">
+                        <li> <img src="https://www.starbucks.in/assets/images/appstoreiOS.png"></li>
+                        <li><img src="https://www.starbucks.in/assets/images/appstoreAndroid.png"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="secondFooter">
+                <!-- <div class="secondLast"> -->
+                <div class="footerMenuOne">
+                    <div> Web Accessiblity | </div>
+                    <div> Privacy Statement |</div>
+                    <div> Terms of Use |</div>
+                    <div> Contact Us</div>
+                </div>
+
+                <div class="rightFooter">
+                    © 2025 Starbucks Coffee Company. All rights reserved
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

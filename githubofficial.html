@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Buy grocery online in hyderabad </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .mainSection {
+            width: 80%;
+            margin: auto;
+        }
+
+        .backgroundImage {
+            width: 100%;
+        }
+
+        .subTitle {
+            text-transform: uppercase;
+            text-align: center;
+            color: #7d5228;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .logoSection {
+            display: flex;
+            /* justify-content: end; */
+        }
+
+        .iconList {
+            display: flex;
+            align-items: center;
+           justify-content: end;
+            width: 50%;
+            height: 5%;
+            margin-left: 70%;
+            gap:20px;
+            
+
+        }
+
+        .firstHalfSection {
+            display: flex;
+            align-items: center;
+        }
+
+        .secondHalfSection {
+            width: 100%;
+            height: 20vh;
+            border: 1px solid #7d5228;
+        }
+
+        .textSection {
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            color: #7d5228;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            margin-left: 60px;
+        }
+
+        .imageSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .note {
+            color: #7d5228;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .footerSection {
+            padding: 40px;
+            /* width: 100%; */
+            display: flex;
+            /* align-items: center; */
+            /* border: 1px solid #7d5228; */
+            background-color: lightgray;
+            color: #565656;
+            font-size: 18px;
+            font-weight: bold;
+            gap: 10px;
+            /* text-align: center; */
+        }
+
+        .footerList {
+            margin-top: 20px;
+            list-style-type: none;
+            display: flex;
+            /* align-items: center; */
+            /* gap:20px; */
+
+        }
+
+        .shopifyButton {
+            padding: 10px;
+            border-radius: 18px;
+            border-color: solid grey;
+            color: gray;
+            font-weight: bold;
+            background-color: lightgray;
+            margin-left: 27px;
+
+
+        }
+
+        /* .shopifyImage{
+            width:80%;
+        } */
+        .footerNote {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: #d3d3d3;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: grey;
+            font-weight: bold;
+        }
+
+        .footerMenu {
+            display: flex;
+            /* flex-direction: row; */
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .secondNote {
+            display: flex;
+            /* justify-content: center; */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .iconMenu {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .fa fa-bars {
+            font-size: 25px;
+        }
+
+        .iconFirst {
+            width: 60%;
+            height: 1%;
+            border-radius: 20px;
+            padding: 8px;
+            border: 1px solid black;
+            background-color: #3b5998;
+            color: #ffffff;
+            border: none;
+            text-align: center;
+        }
+
+        .iconSecond {
+            width: 60%;
+            /* height: 1%; */
+            border-radius: 25px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: #55acee;
+            color: #ffffff;
+            border: none;
+            text-align: center;
+        }
+
+        .iconThird {
+            width: 60%;
+            /* height: 1%; */
+            border-radius: 25px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: #d51f74;
+            color: #ffffff;
+            border: none;
+            text-align: center;
+        }
+
+        .iconFourth {
+            width: 60%;
+            /* height: 1%; */
+            border-radius: 25px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: #565656;
+            color: #ffffff;
+            border: none;
+            /* padding-left: 2px; */
+        }
+
+        .endSection {
+            /* width: 100%; */
+
+
+        }
+
+
+
+        p {
+            color: #825930;
+            position: relative;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+        }
+
+        /* .divider {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 0 30px;
+
+        } */
+
+        .listSection {
+            list-style-type: none;
+            line-height: 20px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #8B5C2C;
+
+            font-weight: bold;
+            font-size: 24px;
+            font-family: sans-serif;
+        }
+
+        .divider::before {
+            content: '';
+            flex: 1;
+            border-bottom: 2px solid #8B5C2C;
+            margin: 0 16px;
+        }
+
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 2px solid #8B5C2C;
+            margin: 0 16px;
+        }
+
+        .secondHalfFooter {
+            margin-top: 20px;
+        }
+
+        .shopifyImage {
+            /* margin-left: 18px; */
+        }
+
+        .contactUs {
+            border-left: 2px solid black;
+            padding: 14px;
+            
+        }
+
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="mainSection">
+        <div class="firstHalfSection">
+            <div> <i class="fa fa-bars" aria-hidden="true"></i></div>
+
+            <div class="logoSection">
+                <img src="	https://starbazaarindia.com/cdn/shop/files/STAR_Logo_275x70px_2.jpg?v=1716440384">
+            </div>
+            <div class="iconList">
+                <div class="about">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Layer_1" x="0px" y="0px" width="29.708px" height="35.576px" viewBox="0 0 29.708 35.576"
+                        enable-background="new 0 0 29.708 35.576" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M6.372,25.971l-1.507-1.575c-2.577-2.693-4.007-6.052-4.028-9.459c0-7.802,6.277-14.08,13.993-14.08    c0.523,0,1.054,0.029,1.58,0.087c6.414,0.704,11.596,5.868,12.321,12.279c0.126,1.119,0.123,2.244-0.012,3.345    c-0.343,2.796-1.675,5.478-3.854,7.755L23.3,25.958l-8.47,8.471L6.372,25.971z">
+                                </path>
+                                <path fill="#808080"
+                                    d="M14.83,1.607c0.493,0,0.993,0.027,1.498,0.083c6.049,0.664,10.974,5.57,11.658,11.618    c0.123,1.083,0.114,2.145-0.012,3.169c-0.339,2.771-1.721,5.311-3.651,7.328l-1.565,1.635l-7.928,7.929L6.902,25.44l-1.496-1.563    c-2.315-2.42-3.799-5.596-3.82-8.945c0-0.027,0-0.055,0-0.082C1.587,7.536,7.516,1.607,14.83,1.607 M14.83,0.107    c-8.129,0-14.743,6.614-14.743,14.743v0.082c0.022,3.608,1.526,7.15,4.236,9.982l1.496,1.563l7.951,7.952l1.061,1.061l1.061-1.061    l7.928-7.929l1.588-1.659c2.292-2.395,3.694-5.224,4.057-8.182c0.142-1.16,0.146-2.344,0.014-3.521    C28.711,6.383,23.25,0.941,16.491,0.199C15.939,0.138,15.38,0.107,14.83,0.107L14.83,0.107z">
+                                </path>
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M14.83,19.062c-2.849,0-5.167-2.317-5.167-5.166c0-2.849,2.318-5.167,5.167-5.167s5.167,2.318,5.167,5.167    C19.997,16.745,17.679,19.062,14.83,19.062z">
+                                </path>
+                                <path fill="#808080"
+                                    d="M14.83,9.479c2.436,0,4.417,1.981,4.417,4.417c0,2.435-1.981,4.416-4.417,4.416s-4.417-1.981-4.417-4.416    C10.414,11.46,12.395,9.479,14.83,9.479 M14.83,7.979c-3.268,0-5.917,2.649-5.917,5.917c0,3.268,2.649,5.916,5.917,5.916    s5.917-2.648,5.917-5.916C20.747,10.628,18.098,7.979,14.83,7.979L14.83,7.979z">
+                                </path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <defs>
+                                        <rect id="SVGID_56_" x="-1045.304" y="275.482" width="1238.638"
+                                            height="515.666">
+                                        </rect>
+                                    </defs>
+                                    <clipPath id="SVGID_2_">
+                                        <use xlink:href="#SVGID_56_" overflow="visible"></use>
+                                    </clipPath>
+                                    <g clip-path="url(#SVGID_2_)">
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="contactUs">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Layer_1" x="0px" y="0px" width="35.567px" height="35.58px" margin-left="15px" viewBox="0 0 35.567 35.58"
+                        enable-background="new 0 0 35.567 35.58" xml:space="preserve">
+                        <g>
+                            <g id="_x39_5RK6G_3_">
+                                <g>
+                                    <g>
+                                        <path fill="#FFFFFF"
+                                            d="M17.808,34.737c-3.379,0-6.756-0.012-10.135-0.034c-3.871-0.027-6.794-3.019-6.801-6.959      c-0.012-6.622-0.013-13.245,0-19.865C0.88,3.847,3.816,0.916,7.854,0.908c3.24-0.006,6.481-0.009,9.722-0.009      c3.379,0,6.757,0.003,10.137,0.009c4.115,0.006,6.998,2.903,7.01,7.045c0.005,2.221,0.003,4.442,0.002,6.663l0.002,6.284      c0.003,2.308,0.007,4.616-0.008,6.924c-0.026,3.894-2.94,6.85-6.777,6.877C24.564,34.725,21.186,34.737,17.808,34.737z">
+                                        </path>
+                                        <path fill="#808080"
+                                            d="M17.579,1.649c3.378,0,6.755,0.003,10.133,0.009c3.687,0.006,6.251,2.592,6.262,6.297      c0.008,3.294,0,6.589,0,9.882c0,3.326,0.017,6.655-0.004,9.982c-0.023,3.441-2.589,6.107-6.032,6.132      c-3.377,0.024-6.754,0.036-10.131,0.036c-3.377,0-6.753-0.012-10.129-0.034c-3.49-0.024-6.05-2.7-6.056-6.21      C1.61,21.122,1.609,14.5,1.622,7.88c0.007-3.63,2.597-6.215,6.234-6.222C11.097,1.652,14.338,1.649,17.579,1.649 M17.579,0.149      c-3.242,0-6.484,0.003-9.726,0.009C3.382,0.166,0.13,3.413,0.122,7.877c-0.012,6.327-0.012,13.011,0,19.868      c0.007,4.364,3.251,7.678,7.545,7.708c3.413,0.023,6.825,0.034,10.14,0.034c3.408,0,6.82-0.012,10.142-0.036      c4.259-0.03,7.492-3.307,7.521-7.622c0.015-2.311,0.011-4.621,0.008-6.931l-0.003-3.061l0.001-3.221      c0.002-2.222,0.003-4.443-0.002-6.665c-0.013-4.509-3.276-7.786-7.759-7.793C24.335,0.152,20.957,0.149,17.579,0.149      L17.579,0.149z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                            <g>
+                                <path fill="#FFFFFF"
+                                    d="M23.563,29.178c-0.648,0-1.303-0.097-1.946-0.287c-7.6-2.243-12.613-7.231-14.899-14.825    c-0.6-1.992-0.297-4.004,0.829-5.52c0.986-1.327,2.506-2.087,4.17-2.087c0.132,0,0.266,0.004,0.401,0.014l0.399,0.028l3.175,5.552    l-0.121,0.328c-0.362,0.985-1.049,1.514-1.654,1.98c-0.198,0.152-0.394,0.302-0.572,0.47l-0.113,0.104    c-0.127,0.118-0.365,0.337-0.386,0.427c1.579,3.37,4.052,5.838,7.372,7.387c0.42-0.281,0.738-0.674,1.07-1.087    c0.234-0.29,0.466-0.576,0.727-0.831c0.313-0.304,0.783-0.762,1.451-0.762c0.257,0,0.511,0.069,0.756,0.205    c1.093,0.611,2.173,1.243,3.23,1.863l1.643,0.959l0.043,0.374c0.164,1.419-0.265,2.783-1.207,3.84    C26.875,28.497,25.283,29.178,23.563,29.178z">
+                                </path>
+                                <path fill="#808080"
+                                    d="M11.718,7.209c0.115,0,0.231,0.004,0.348,0.012c0.909,1.59,1.866,3.264,2.802,4.901    c-0.401,1.09-1.345,1.51-2.038,2.165c-0.42,0.396-0.947,0.798-0.642,1.445c1.708,3.639,4.414,6.25,8.069,7.859    c1.077-0.521,1.55-1.507,2.283-2.223c0.282-0.274,0.574-0.548,0.926-0.548c0.123,0,0.252,0.033,0.391,0.11    c1.548,0.864,3.07,1.774,4.537,2.626c0.317,2.75-1.969,4.872-4.831,4.872c-0.561,0-1.144-0.082-1.733-0.256    C14.487,26.004,9.644,21.181,7.437,13.85C6.395,10.389,8.511,7.209,11.718,7.209 M11.718,5.709c-1.904,0-3.643,0.871-4.772,2.39    c-1.27,1.708-1.614,3.962-0.945,6.184c2.363,7.852,7.546,13.009,15.404,15.328c0.712,0.21,1.438,0.317,2.158,0.317    c1.933,0,3.729-0.772,4.929-2.118c1.086-1.22,1.581-2.791,1.392-4.426l-0.086-0.747l-0.65-0.378    c-0.434-0.252-0.873-0.509-1.316-0.769c-1.053-0.617-2.142-1.255-3.243-1.87c-0.358-0.2-0.735-0.3-1.122-0.301    c-0.973,0-1.623,0.633-1.973,0.973c-0.307,0.3-0.552,0.604-0.79,0.9c-0.209,0.259-0.394,0.489-0.587,0.676    c-2.85-1.425-4.945-3.521-6.38-6.379c0.001-0.001,0.002-0.002,0.003-0.003l0.117-0.108c0.143-0.135,0.325-0.275,0.517-0.423    c0.618-0.476,1.463-1.127,1.901-2.316l0.242-0.656l-0.348-0.607l-2.802-4.9l-0.397-0.695l-0.8-0.057    C12.019,5.714,11.867,5.709,11.718,5.709L11.718,5.709z">
+                                </path>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <defs>
+                                        <rect id="SVGID_56_" x="-1131.971" y="275.484" width="1238.638"
+                                            height="515.666"></rect>
+                                    </defs>
+                                    <clipPath id="SVGID_2_">
+                                        <use xlink:href="#SVGID_56_" overflow="visible"></use>
+                                    </clipPath>
+                                    <g clip-path="url(#SVGID_2_)">
+
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <defs>
+                                    <rect id="SVGID_60_" x="371.061" y="132.625" width="1237.039" height="515"></rect>
+                                </defs>
+                                <clipPath id="SVGID_4_">
+                                    <use xlink:href="#SVGID_60_" overflow="visible"></use>
+                                </clipPath>
+                                <g clip-path="url(#SVGID_4_)">
+
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <div>
+            <img src="	https://cdn.shopify.com/s/files/1/0288/1735/8945/files/website_1600P_X_656_P-01.jpg?v=1716286351"
+                class="backgroundImage">
+        </div>
+        <div class="subTitle">
+            Starquik a Tata Enterprise,
+            Is our online delivery partner bringing star quality at your convenience.
+            now get fresh fruits, veggies & groceries delivered to your house.
+
+        </div>
+        <div class="secondHalfSection">
+            <div class="textSection">
+                Now shop online on STARQUIK.com or<br>
+                Downolad the app on Google Playstore/ Apple App store.
+            </div>
+            <div class="imageSection">
+                <img src="https://cdn.shopify.com/s/files/1/0288/1735/8945/files/en_badge_web_generic.png?v=1591264195"
+                    width="13%" height="10%">
+                <img src="https://cdn.shopify.com/s/files/1/0288/1735/8945/files/download.png?v=1591264195" width="10%"
+                    height="10%">
+            </div>
+        </div>
+
+        <div class="note">
+            Available in Mumbai, Pune & Bangalore
+        </div>
+        <div class="divider">
+            SHARE IT NOW
+        </div>
+        <div class="endSection">
+            <div class="footerSection">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0288/1735/8945/files/01.png?v=1592310881" width="80%"
+                        height="80%">
+                </div>
+                <div class="secondHalfFooter">
+
+                    <img src="https://cdn.shopify.com/s/files/1/0288/1735/8945/files/STARQUIK_LOGO_223px_x_78-01.jpg?v=1716276071"
+                        width="60%" class="shopifyImage">
+                    <div class="secondNote">Shop online.<br>
+                        Download the app today.</div>
+                    <div>
+                        <button class="shopifyButton">SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="footerList">
+                    <ul class="listSection">
+                        <div>About Star</div>
+                        <li>Contact us</li>
+                        <li>Store Locater</li>
+                    </ul>
+                </div>
+                <div class="footerList">
+                    <ul class="listSection">
+                        <li>Policies</li>
+                        <li>Terms & Conditions</li>
+                        <li>Exchange/Return Policy</li>
+                        <li>CSR</li>
+                        <li>Statutory Information</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="footerMenu"> -->
+                <div class="footerList">
+                    <ul class="listSection">
+                        <li>Customer Care</li>
+                        <li>Starhelp@trent-tata.com</li>
+                        <li>+91 9029002233</li>
+                        <li>Join us on</li>
+
+                        <div class="iconMenu">
+                            <div class="iconFirst"> <i class="fa fa-facebook" aria-hidden="true"></i></div>
+
+                            <div class="iconSecond"> <i class="fa fa-twitter" aria-hidden="true"></i></div>
+
+                            <div class="iconThird"> <i class="fa fa-instagram" aria-hidden="true"></i></div>
+
+                            <div class="iconFourth"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="footerNote">
+                All rights reserved 2020 Trent Hypermarket Pvt Ltd
+            </div>
+
+        </div>
+
+</body>
+
+</html>

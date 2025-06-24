@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fresh Fruits Vegetables Store </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .mainSection {}
+
+        .headerSection {
+            width: 89%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .starbazaarIcons {
+            font-size: 30px;
+            color: rgb(137, 132, 132);
+        }
+
+        .logoSection {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .iconSection {
+            /* margin-left: 10px; */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mapIcon {
+            border-right: 1px solid black;
+            padding: 10px;
+        }
+
+        .detailsFruit {
+            width: 90%;
+            margin: auto;
+            position: relative;
+        }
+
+        .detailsFruit img {
+            width: 100%;
+            height: auto;
+        }
+
+        .backgroundCard {
+            position: absolute;
+            width: 17%;
+            height: 25vh;
+            top: 20%;
+            right: 9%;
+            font-size: 46px;
+            color: #7d5228;
+            background-color: #ffffffe6;
+            font-weight: bolder;
+            padding: 40px;
+        }
+
+        .paragraphSection {
+            width: 68%;
+            margin: 0 auto;
+
+        }
+
+        p {
+            text-align: center;
+            color: #7d5228;
+            font-style: oblique;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            font-size: 30px;
+            color: #7d5228;
+            font-weight: 900;
+            margin-bottom: 20px;
+            padding: 10px;
+
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            border-bottom: 3px solid #7d5228;
+            flex: 1;
+            /* padding: 10px; */
+        }
+
+        .divider::before {
+            margin-right: 5px;
+            /* content: ''; */
+        }
+
+        .divider::after {
+            margin-left: 5px;
+            /* content: ' '; */
+        }
+
+        .cardSection {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 50px;
+            margin-bottom: 30px;
+        }
+
+        .cardFirst {
+            width: 30%;
+            height: auto;
+            padding: 10px;
+            border: 1px solid #7d5228;
+
+        }
+
+        .imgTitle {
+            text-align: center;
+            font-size: 20px;
+            color: #7d5228;
+            font-weight: 600;
+        }
+
+        .fruitInfoSection {
+            width: 90%;
+            margin: auto;
+        }
+
+        .fruitInfoSection img {
+            width: 100%;
+            height: auto;
+        }
+
+        .fruitsDetails {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .backgroundCardText {
+            position: absolute;
+            width: 20%;
+            height: 24vh;
+            top: 20%;
+            right: 5%;
+            font-size: 33px;
+            font-weight: 800;
+            color: #7d5228;
+            background-color: #ffffffe6;
+            font-weight: 900px;
+            padding: 30px;
+            text-align: center;
+
+        }
+
+        .knowMoreBtn {
+            padding: 10px 30px;
+            background-color: #ffffffe6;
+            color: #7d5228;
+            border: 2px solid #7d5228;
+            border-radius: 24px;
+            text-align: center;
+            font-weight: 800;
+
+        }
+
+        .footerSec {
+            /* width: 90%; */
+            margin: auto;
+            background-color: #d3d3d3;
+
+            /* padding: 30px; */
+            /* display: flex; */
+        }
+
+        .footerEle {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+
+        }
+
+        .footerElements {
+            font-size: 20px;
+            color: #565656;
+            font-weight: 700;
+            line-height: 40px;
+        }
+
+        .footerElements:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 1px solid gray;
+        }
+
+        .footerImage {
+            width: 30%;
+            /* margin-right: 30px; */
+        }
+
+        .secondFooter {
+            font-size: 16px;
+            color: #626262;
+            font-weight: 700;
+        }
+
+        .shopNowBtn {
+            padding: 10px 25px;
+            border-radius: 24px;
+            background-color: #d3d3d3;
+            color: #6d6d6d;
+            border-color: 1px #6d6d6d;
+            font-weight: 600;
+        }
+
+        .footerDiv {
+            text-align: center;
+            line-height: 25px;
+        }
+
+
+
+
+        .footerFacebook {
+            padding: 12px 15px;
+            border: 1px solid black;
+            background-color: rgb(17, 17, 119);
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+
+        }
+
+        .footerTwitter {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(132, 185, 218);
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+
+
+        }
+
+        .footerInsta {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(235, 33, 137);
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+
+        }
+
+        .footerMail {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(44, 42, 42);
+            color: #ffffff;
+            border-radius: 24px;
+            border: none;
+
+        }
+
+        .backgroundCardFirst {
+            position: absolute;
+            width: 20%;
+            height: 27vh;
+            top: 20%;
+            right: 5%;
+            font-size: 33px;
+            font-weight: 900;
+
+            color: #7d5228;
+            background-color: #ffffffe6;
+            font-weight: 900px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .backgroundCardSecond {
+            position: absolute;
+            width: 20%;
+            height: 25vh;
+            top: 20%;
+            right: 5%;
+            font-size: 33px;
+            font-weight: 900;
+            color: #7d5228;
+            background-color: #ffffffe6;
+            font-weight: 900px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .secondHalfFooter {
+            /* text-align: center; */
+            /* display: flex; */
+            /* align-items: center; */
+        }
+
+        .endFooter {
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 18px;
+            color: #565656;
+            font-weight: 600;
+        }
+
+        .cardOfStarBazaar {
+            text-align: center;
+            line-height: 42px;
+        }
+
+        .cardTitles {
+            line-height: 35px;
+        }
+
+        .footerExit {
+            /* margin-bottom: 10px; */
+            padding-bottom: 10px;
+        }
+
+        .anotherDivider {
+            display: flex;
+            align-items: center;
+            /* text-align: center; */
+            width: 100%;
+            margin: auto;
+            font-size: 30px;
+            color: #7d5228;
+            font-weight: 900;
+            /* margin-bottom: 20px; */
+            /* padding: 10px; */
+        }
+
+        .anotherDivider::before,
+        .anotherDivider::after {
+            content: '';
+            border-bottom: 2px solid #7d5228;
+            flex: 3;
+            /* padding: 10px; */
+        }
+
+        .anotherDivider::before {
+            margin-right: 30px;
+            width: 20%;
+            /* content: ''; */
+        }
+
+        .anotherDivider::after {
+            margin-left: 30px;
+            /* content: ' '; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mainSection">
+        <div class="headerSection">
+            <div class="logoSection">
+
+                <div> <i class="fa fa-bars starbazaarIcons" aria-hidden="true"></i></div>
+                <div> <img src="https://starbazaarindia.com/cdn/shop/files/STAR_Logo_275x70px_2.jpg?v=1716440384"></div>
+            </div>
+            <div class="iconSection">
+                <div class="mapIcon"> <i class="fa fa-map-marker starbazaarIcons" aria-hidden="true"></i></div>
+                <div> <i class="fa fa-phone-square starbazaarIcons" aria-hidden="true"></i></div>
+
+            </div>
+
+
+        </div>
+        <div class="detailsFruit">
+            <div class="background-image">
+                <img
+                    src="https://starbazaarindia.com/cdn/shop/files/01_banner_b739411f-6a7f-428d-bc07-c0545d40e993_1300x.jpg?v=1614360992">
+            </div>
+            <div class="backgroundCard">
+                <div class="cardOfStarBazaar">
+                    Harvested<br>
+                    Yesterday.<br>
+                    In store<br>
+                    Today.
+                </div>
+            </div>
+        </div>
+        <div class="paragraphSection">
+            <p>Our love for fresh food is a passion shared by the country. Which is why we source over 80% of vegetables
+                and 65% of fruits directly from over 800 farmers, just after a day of being harvested, and bring it on
+                your plate. That is our level of commitment to serving you only the freshest and the highest quality of
+                fruits and vegetables. It’s time we make eating fresh a habit.</p>
+        </div>
+        <div class="divider">
+            <div>
+                <div class="leftDivider">
+                    <!-- <hr/> -->
+                </div>
+                <div class="breakLine">
+                    <div class="orSection">DISCOVER OUR COMMITMENT TO FRESH </div>
+                    <!-- <div class="nowDivider"> </div> -->
+                </div>
+                <div class="rightDivider">
+                    <!-- <hr /> -->
+                </div>
+
+            </div>
+        </div>
+        <style>
+            .cardContainer {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                position: relative;
+            }
+            .cardContent{
+                color:red;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+            .card{
+                position: relative;
+                
+            }
+        </style>
+        <div class="cardContainer">
+            <div class="card">
+                <img src="https://picsum.photos/id/237/200/300">
+                <h1 class="cardContent">Hello</h1>
+            </div>
+            <div class="card">
+                 <img src="https://picsum.photos/id/237/200/300">
+                <h1 class="cardContent">Hello1</h1>
+            </div>
+            <div class="card"> 
+                <img src="https://picsum.photos/id/237/200/300">
+                <h1 class="cardContent">Hello2222</h1>
+            </div>
+            <div class="card"> 
+                <img src="https://picsum.photos/id/237/200/300">
+                <h1 class="cardContent">Hello2333333333</h1>
+            </div>
+
+        </div>
+        <div class="cardSection">
+
+            <div class="cardFirst">
+                <img src="https://starbazaarindia.com/cdn/shop/files/1_farmers_vector-03_x327.jpg?v=1614360020">
+                <div class="imgTitle">Direct Sourcing from Farmers</div>
+            </div>
+            <div class="cardFirst">
+                <img src="https://starbazaarindia.com/cdn/shop/files/2_quality_vector-03_x327.jpg?v=1614360020">
+                <div class="imgTitle">Direct Sourcing from Farmers</div>
+            </div>
+            <div class="cardFirst">
+                <img src="https://starbazaarindia.com/cdn/shop/files/leave-icon_x327.jpg?v=1614360889">
+                <div class="imgTitle">Best of Seasonal Produce</div>
+            </div>
+
+        </div>
+        <div class="fruitInfoSection">
+            <div class="fruitsDetails">
+                <img src="https://starbazaarindia.com/cdn/shop/files/01_organically_banner_1300x.jpg?v=1614359074">
+                <div class="backgroundCardText">
+                    <div class="cardTitles"> A JOURNEY FROM THE FARM TO YOUR PLATE</div>
+                    <div> <button class="knowMoreBtn">KNOW MORE</button></div>
+                </div>
+            </div>
+            <div class="fruitsDetails">
+                <img src="https://starbazaarindia.com/cdn/shop/files/02_veggieday_banner_1300x.jpg?v=1614359074">
+                <div class="backgroundCardFirst">
+                    <div class="cardTitles"> NOT ONLY A WEDNESDAY. IT’S A FRESH WEDNESDAY</div>
+                    <div><button class="knowMoreBtn">KNOW MORE</button></div>
+                </div>
+            </div>
+            <div class=" fruitsDetails">
+                <img src="https://starbazaarindia.com/cdn/shop/files/03_mango_man_banner_1300x.jpg?v=1614359074">
+                <div class="backgroundCardSecond">
+                    <div class="cardTitles"> LOVE FROM OUR LOCAL FARMERS</div>
+                    <div><button class="knowMoreBtn ">KNOW MORE</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="anotherDivider">
+                SHARE IT NOW
+
+            </div>
+
+
+
+            <div class="footerSec">
+                <div class="footerEle">
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0288/1735/8945/files/01.png?v=1592310881"
+                            class="footerImage">
+                    </div>
+                    <div class="footerDiv">
+                        <div> <img
+                                src="https://cdn.shopify.com/s/files/1/0288/1735/8945/files/STARQUIK_LOGO_223px_x_78-01.jpg?v=1716276071">
+                        </div>
+                        <div class="secondFooter">Shop online.</div>
+                        <div class="secondFooter">Download the app today.</div>
+                        <div><button class="shopNowBtn">SHOP NOW</button></div>
+                    </div>
+                    <div>
+                        <div class="footerElements">About Star</div>
+                        <div class="footerElements">Contact Us</div>
+                        <div class="footerElements">Store Locator</div>
+
+                    </div>
+                    <div>
+                        <div class="footerElements">Policies</div>
+                        <div class="footerElements">Terms & Conditions</div>
+                        <div class="footerElements">Exchange/Return Policy</div>
+                        <div class="footerElements">CSR</div>
+                        <div class="footerElements">Statutory Information</div>
+
+                    </div>
+                    <div>
+                        <div class="footerElements">Customer Care</div>
+                        <div class="footerElements">Starhelp@trent-tata.com</div>
+                        <div class="footerElements">+91 9029002233</div>
+                        <div class="footerElements">Join us on</div>
+                        <div>
+                            <i class="fa fa-facebook footerFacebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter footerTwitter" aria-hidden="true"></i>
+                            <i class="fa fa-instagram footerInsta" aria-hidden="true"></i>
+                            <i class="fa fa-envelope-o footerMail" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="endFooter">
+                    <div class="footerExit"> All rights reserved 2020 Trent Hypermarket Pvt Ltd </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+</body>
+
+</html>

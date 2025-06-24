@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Bar </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .mainSection {
+            height: 90vh;
+        }
+
+        .headerContainer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .firstHalf {
+            display: flex;
+            gap: 20px;
+            font-size: 17px;
+            margin-left: 20px;
+        }
+
+        .secondHalf {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .signIn {
+            padding: 10px 22px;
+            border-radius: 24px;
+            background-color: rgb(35, 35, 209);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .gmail {
+            font-size: 17px;
+        }
+
+        .imageClass {
+            font-size: 17px;
+        }
+
+        .keyboard {
+            font-size: 20px;
+        }
+
+        .middleDiv {
+            margin-top: 80px;
+
+            /* border: 1px solid black; */
+            /* display: flex; */
+            /* justify-content: center; */
+        }
+
+        .googleImageSec {
+            /* margin-top: 30%; */
+            /* width: 70%; */
+            /* height: 70%; */
+            /* text-align: center; */
+            margin-left: 38%;
+            margin-top: 40px;
+            width: 20%;
+            height: 20%;
+        }
+
+        .searchBar {
+            margin-top: 20px;
+            margin-left: 28%;
+            width: 38%;
+            padding: 20px;
+            border-radius: 30px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 4px #000;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .firstMid {}
+
+        .secondMid {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .span1 {
+            padding: 10px;
+        }
+
+        .span2 {}
+
+        .searchBtn {
+            padding: 12px 20px;
+            background-color: #f8f9fa;
+            color: #3c4043;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .searchBtn:hover {
+            /* border: 1px solid gray; */
+        }
+
+        .luckyBtn {
+            padding: 12px 20px;
+            background-color: #f8f9fa;
+
+            color: #3c4043;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .luckyBtn:hover {
+            /* border: 1px solid gray; */
+
+        }
+
+        .btnSection {
+            margin-top: 20px;
+            display: flex;
+            margin-left: 40%;
+            gap: 10px;
+        }
+
+        .fourthNote {
+            margin-top: 20px;
+            color: #1a0dab;
+            font-size: 17px;
+            margin-left: 30%;
+        }
+        .fifthSection{
+            margin-top: 20px;
+            display: flex;
+            margin-left: 30%;
+        }
+        .fifthSection:hover{
+            text-decoration: underline;
+            color:#1a0dab;
+        }
+        
+        .offerGoogle{
+            font-size: 17px;
+        }
+        .languages{
+            color:#1a0dab;
+        }
+        .secondLastFooter{
+            margin-top: 13%;
+            width: 100%;
+            height:8vh;
+            /* padding: 20px; */
+            /* width: 100%; */
+            background-color:lightgray;
+            
+        }
+        .secondLastFooter:hover{
+            text-decoration: underline;
+
+        }
+
+        .india{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid black;
+        }
+        .lastFooter{
+            width: 100%;
+            height:8vh;
+            /* padding: 20px; */
+            /* width: 100%; */
+            background-color:lightgray;
+            /* border-bottom: 2px gray; */
+            display: flex;
+            justify-content: space-between;
+            /* padding: 20px; */
+        }
+        .lastFooter:hover{
+            text-decoration: underline;
+        }
+        .thirdHalf{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .fourthHalf{
+            
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainSection">
+        <div class="headerContainer">
+            <div class="firstHalf">
+                <div>About</div>
+                <div>Store</div>
+            </div>
+            <div class="secondHalf">
+                <div class="gmail">Gmail</div>
+                <div class="imageClass">Images</div>
+                <div class="jar"><i class="fa fa-flask" aria-hidden="true"></i>
+                </div>
+                <div> <i class="fa fa-th keyboard" aria-hidden="true"></i></div>
+                <div><button class="signIn">Sign in </button></div>
+
+            </div>
+        </div>
+        <div class="middleDiv">
+
+            <div> <img src="https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                    class="googleImageSec"></div>
+            <div class="searchBar">
+                <div class="firstMid">
+                    <div class="searchIcon"><i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div clas="secondMid">
+                    <span class="span1"> <i class="fa fa-microphone" aria-hidden="true"></i></span>
+                    <span class="span2"> <i class="fa fa-picture-o" aria-hidden="true"></i></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="btnSection">
+            <div><button class="searchBtn">Google Search</button></div>
+            <div><button class="luckyBtn">I'm Feeling Lucky</button></div>
+        </div>
+        <div class="fourthNote">
+            New! Google Pixel 9a: Where AI magic meets durable design. Available now
+
+        </div>
+        <div class="fifthSection">
+            <div class="offerGoogle">Google offered in: </div>
+            <div>
+                <div class="languages">हिन्दी
+                    বাংলা
+                    తెలుగు
+                    मराठी
+                    தமிழ்
+                    ગુજરાતી
+                    ಕನ್ನಡ
+                    മലയാളം
+                    ਪੰਜਾਬੀ
+                </div>
+            </div>
+        </div>
+        <div class="secondLastFooter">
+            <div class="india">India</div>
+        </div>
+        <div class="lastFooter">
+            <div class="thirdHalf">
+                <div>Advertising</div>
+                <div>Business</div>
+                <div>How search works</div>
+            </div>
+            <div class="fourthHalf">
+                <div>Privacy</div>
+                <div>Terms</div>
+                <div>Settings</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

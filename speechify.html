@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medium Members Can Only Listen To</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .wholeSection {
+            background-color: black;
+            color: white;
+        }
+
+        .headerSection {
+            display: flex;
+            padding: 10px 25px;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .linkSection {
+            display: flex;
+        }
+
+        .logInButton {
+            background-color: transparent;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .tryForFreeButton {
+            padding: 15px 20px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .headerLinks {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+
+        }
+
+        .speechifyPath {
+            padding: 10px 25px;
+        }
+
+        .speechifyParagraphSection {
+            width: 70%;
+            margin: auto;
+            margin-bottom: 50px;
+            /* padding: 28px; */
+            /* margin-left: 20px; */
+            /* line-height: 30px; */
+        }
+
+        .titleSpeechify {
+            width: 80%;
+            font-size: 60px;
+            /* margin: 10px 90px; */
+            margin-top: 60px;
+            margin-bottom: 20px;
+            padding: 22px;
+
+        }
+
+        .paragraphPart {
+            padding: 10px 30px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 35px;
+            color: #d4d4d4;
+        }
+
+        .detailsSectionSpeechify {
+            width: 70%;
+            margin: auto;
+        }
+
+        .paragraphHeaders {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .speechifyWebDetails {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+        .lineDivider {
+            background-color: gray;
+        }
+
+        .footerSection {
+            width: 90%;
+            margin: auto;
+            line-height: 30px;
+            /* display: flex; */
+            /* margin-bottom: 30px; */
+            margin-top: 50px;
+        }
+
+        .footerLinks {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footerSecond {
+            display: flex;
+            line-height: 30px;
+           gap: 40%;
+        }
+
+        .languagesFooter {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .endOfSpeechify {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footerLinksOfSpeechify {
+            display: flex;
+            /* margin-left: px; */
+            gap: 20px;
+            color: rgb(128 128 128);
+            cursor: pointer;
+        }
+
+        .footerNotes {
+            margin-top: 50px;
+            font-size: 30px;
+            color: rgb(128 128 128);
+        }
+
+        .recommondedReadingNote {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: rgb(128 128 128);
+        }
+
+        /* .seprator{
+            color:rgb(128 128 128);
+
+        } */
+        .footerTitles {
+            color: rgb(128 128 128);
+        }
+
+        .hrClass {}
+
+        .highlightedText {
+            color: rgb(152 153 166);
+            margin-left: 10px;
+        }
+
+        .italicText {
+            font-style: italic;
+            font-size: 20px;
+            padding: 10px;
+            line-height: 30px;
+            /* width: 90%; */
+            margin: auto;
+            /* gap:10px; */
+            border-left: 4px solid gray;
+            /* border-left-width: 4px; */
+        }
+
+        .socialMediaLogos {
+            /* margin-left: 20px; */
+            gap: 13px;
+            display: flex;
+        }
+
+        .playBack {
+            /* color:white; */
+            background-color: white;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
+
+        .iconsOf {}
+
+        .playStoreSpeechify {
+            background-color: white;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .shadowIcons {
+            display: flex;
+            justify-content: center;
+            border: 1px solid gray;
+            padding: 13px;
+            background-color: rgb(23 23 23);
+            /* border-radius: 24px; */
+            /* color: white; */
+            border-radius: 20px;
+            border: none;
+        }
+        .shadowIcons:hover{
+            background-color: rgb(135, 132, 132);
+        }
+        .underlinedText {
+            color: #ffffff;
+
+        }
+
+        .langHover {}
+
+        .langHover:hover {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wholeSection">
+        <div class="headerSection">
+            <div>
+                <img src="https://website.cdn.speechify.com/speechify-logo-v2.svg?quality=80&width=384">
+            </div>
+
+            <div class="linkSection">
+                <div><a href="" class="headerLinks">Text to Speech</a></div>
+                <div><a href="" class="headerLinks">AI Voice Genrator</a></div>
+                <div><a href="" class="headerLinks">TTS API</a></div>
+                <div><a href="" class="headerLinks">Solutions</a></div>
+                <div><a href="" class="headerLinks">Students</a></div>
+                <div><a href="" class="headerLinks">About</a></div>
+
+
+            </div>
+
+            <div>
+                <button class="logInButton">Log In</button>
+                <button class="tryForFreeButton">Try For Free</button>
+            </div>
+
+        </div>
+        <div class="speechifyPath">
+            <span> Home/ </span>
+            <span class="highlightedText">Medium members can listen to any Medium story with the Speechify Play
+                Button</span>
+        </div>
+        <div class="speechifyParagraphSection">
+            <div class="titleSpeechify">Medium members can listen to any Medium story with the Speechify Play Button.
+            </div>
+            <div class="paragraphPart">At Medium and Speechify, we’re always exploring new ways to make content more
+                accessible. That’s why
+                we’re excited to share that Speechify is available to all Medium members with the launch of Medium’s
+                Listen feature. Any Medium member can click the “Listen” button at the top of most stories to hear an
+                audio version<a class="underlinedText"> read aloud </a> a number of narrators. Users who aren’t Medium
+                members will be invited to
+                sign up for membership.</div>
+            <div class="paragraphPart">Since the launch of our partnership, Medium members have told us that audio has
+                helped them consume
+                more stories than ever before – up to three times as many. Audio helps people listen to Medium articles
+                during the day when they normally wouldn’t be reading: while going on walks, commuting, exercising,
+                doing chores, doing other things on their computer, or even as they fall asleep.</div>
+            <div class="paragraphPart">We’ve also heard many members tell us they retain information better when they
+                have a chance to listen
+                and read at the same time. This is a new way of consuming content that our partnership supports –
+                Speechify highlights text as it reads the audio out loud to you.</div>
+            <div class="italicText">"When working out, I used to read on my phone between sets. Now, it’s so much easier
+                with audio — I can
+                listen to many more articles than I could read before."</div>
+            <div class="paragraphPart">— Jess, Medium listener</div>
+            <div class="paragraphPart">From everything we’ve heard, we believe the Speechify play button on Medium can
+                make your experience
+                with Medium more enjoyable and flexible.</div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div class="detailsSectionSpeechify">
+            <div class="paragraphHeaders">A Magical Way to Read More</div>
+            <div class="speechifyWebDetails">If you love reading, you probably have a long list of articles bookmarked.
+                You can now use the Listen
+                feature to make your way through that list faster. Speechify also allows you to change your listening
+                speed. Some users listen to articles at 2-3x the normal listening speed. You can listen to articles at
+                up to 4.5x the normal speed. Speed listening is a productivity hack for many, and we’re excited to make
+                it easier for you.</div>
+            <div class="paragraphHeaders">A Tool for Proofreading</div>
+            <div class="speechifyWebDetails">We’ve heard that writers find the Listen feature helpful when they’re
+                proofreading their drafts.
+                Sentences often sound different when you read them out loud, and we’re excited to help our community of
+                creators improve the stories they bring to life. To listen to one of your drafts, you can click the “…”
+                button in Medium’s web editor, then select “share draft link,” visit that link yourself, and click the
+                Listen button.</div>
+            <div class="paragraphHeaders">Making Reading Easy</div>
+            <div class="speechifyWebDetails">By some estimates, one in five people faces dyslexia, which can make
+                traditional reading difficult.
+                Many people also have visual impairment. Through our listening option, we aim to lower the barrier to
+                learning and delight across Medium.</div>
+            <div class="paragraphHeaders">How You Can Listen to Medium with Speechify</div>
+            <div class="speechifyWebDetails">You can find the Listen button at the top of a Medium story. When you press
+                this button via web
+                browser, as a logged-in Medium member, the story text is read to you and you’ll see the words
+                highlighted as you go.</div>
+            <div class="speechifyWebDetails">We all have our own tastes. If you’d like to listen to a voice other than
+                the default option, you can
+                select a new one by clicking the voice button in the bottom left corner.</div>
+            <div class="speechifyWebDetails">In the bottom right corner, you can click the speed button to adjust the
+                playback speed from 0.5x to 4.5x.</div>
+            <div class="speechifyWebDetails">Happy listening!</div>
+            <div class="speechifyWebDetails">– Team Medium & Team Speechify</div>
+            <!-- <hr class="lineDivider"> -->
+        </div>
+        <!-- <hr class="seprator"> -->
+        <!-- <hr class="hrClass"> -->
+        <div class="footerSection">
+            <hr class="lineDivider">
+
+            <div class="footerLinks">
+                <div>
+                    <div class="footerTitles">Text to Speech</div>
+                    <!-- <div> <a>Text to Speech</a></div> -->
+                    <div class="langHover"> <a>iPhone & iPad Apps</a></div>
+                    <div class="langHover"> <a>Android App</a></div>
+                    <div class="langHover"> <a>Mac App</a></div>
+                    <div class="langHover"> <a>Web App</a></div>
+                    <div class="langHover"> <a>Chrome Extension</a></div>
+                    <div class="langHover"> <a>Edge Add-on</a></div>
+                </div>
+
+                <div>
+                    <div class="footerTitles">For Creators</div>
+                    <div class="langHover"><a>AI Voice Generator</a></div>
+                    <div class="langHover"><a>Dubbing</a></div>
+                    <div class="langHover"><a>Dubbing</a></div>
+                    <div><a></a></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div>
+                    <div class="footerTitles">For Business</div>
+                    <div class="langHover"><a>Teams</a></div>
+                    <div class="langHover"><a>Education</a></div>
+                    <div class="langHover"><a>Try Text to Speech API</a></div>
+                    <div class="langHover"><a>Text to Speech API for Enterprise</a></div>
+                    <div class="langHover"><a>Text to Speech API Docs</a></div>
+                    <div><a></a></div>
+                    <div><a></a></div>
+                    <div><a></a></div>
+                    <div><a></a></div>
+
+                </div>
+                <div>
+                    <div class="footerTitles">Company</div>
+
+                    <div><a>Contact</a></div>
+
+                    <div class="langHover"><a>Blog</a></div>
+                    <div class="langHover"><a>Careers</a></div>
+                    <div class="langHover"><a>Affiliates</a></div>
+                    <div class="langHover"><a>Help</a></div>
+                    <div class="langHover"><a>Status</a></div>
+                    <div class="langHover"><a>Press</a></div>
+                    <div class="langHover"><a> Brand Kit</a></div>
+                </div>
+                <div>
+                    <div class="footerTitles">Follow Speechify</div>
+                    <div class="socialMediaLogos">
+                        <div> <img src="https://website.cdn.speechify.com/instagram.svg?quality=80" class="shadowIcons">
+                        </div>
+                        <div> <img src="https://website.cdn.speechify.com/Facebook.svg?quality=80" class="shadowIcons">
+                        </div>
+                        <div> <img src="https://website.cdn.speechify.com/x.svg?quality=80" class="shadowIcons"></div>
+
+                    </div>
+                    <div class="socialMediaLogos">
+                        <img src="https://website.cdn.speechify.com/tiktok.svg?quality=80" class="shadowIcons">
+                        <img src="https://website.cdn.speechify.com/linkedin.svg?quality=80" class="shadowIcons">
+                        <img src="https://website.cdn.speechify.com/youtube-logo.svg?quality=80" class="shadowIcons">
+                    </div>
+
+
+                </div>
+                <div>
+                    <div class="footerTitles">Get The App</div>
+                    <div class="iconsOf">
+                        <div> <img src="https://website.cdn.speechify.com/app-store-badge.svg?quality=80&width=384"
+                                class="playBack"></div>
+                        <div> <img
+                                src="https://website.cdn.speechify.com/play-store-download-badge.svg?quality=80&width=384"
+                                class="playStoreSpeechify"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="recommondedReadingNote">Recommended Reading</div>
+
+            <div class="footerSecond">
+                <div>
+                    <!-- <div>Recommended Reading</div> -->
+                    <div class="langHover"><a>Audiobook vs. Reading</a></div>
+                    <div class="langHover"><a>Text to Speech Reader</a></div>
+                    <div class="langHover"><a>Male Voice Generator</a></div>
+                    <div class="langHover"><a>Robot Voice Generator</a></div>
+                    <div class="langHover"><a>Cartoon Character Voice Generator</a></div>
+                    <div class="langHover"><a>Cartoon Character Voice Generator</a></div>
+                    <div class="langHover"><a>Text to Speech Chrome Extension</a></div>
+                    <div class="langHover"><a>PDF Read Aloud</a></div>
+                    <div class="langHover"><a>Texto a Voz</a></div>
+                    <div class="langHover"><a></a></div>
+                </div>
+                <div>
+                    <div class="langHover"><a>
+                            PDF Text to Speech Android</a></div>
+                    <div class="langHover"><a>
+                            PDF Text to Speech Android</a></div>
+                    <div class="langHover"><a>
+                            Top Dyslexia Reading Programs</a></div>
+                    <div class="langHover"><a>Text to Speech Anime</a></div>
+                    <div class="langHover"><a>
+                            AI Voice Changer</a></div>
+                    <div class="langHover"><a>
+                            AI Voice Changer</a></div>
+                    <div class="langHover"><a>Hindi Text to Speech</a></div>
+                    <div class="langHover"><a>AI Voice Generator</a></div>
+                    <div class="langHover"><a>
+                            Leitor de Texto</a></div>
+                    <div><a></a></div>
+                </div>
+            </div>
+            <!-- <div>
+                <div>View in other languages</div>
+                
+
+            </div> -->
+            <div class="footerNotes">View in other languages</div>
+            <div class="languagesFooter">
+                <div>
+                    <div class="langHover"><a>中文 (简体)</a></div>
+                    <div class="langHover"><a>Nederlands</a></div>
+                    <div class="langHover"><a>हिन्दी</a></div>
+                    <div class="langHover"><a>Norsk bokmål</a></div>
+                    <div class="langHover"><a>Español</a></div>
+
+                </div>
+                <div>
+                    <div class="langHover"><a>
+                            中文 (台灣)</a></div>
+                    <div class="langHover"><a>
+                            Français</a></div>
+                    <div class="langHover"><a>
+                            Italiano</a></div>
+                    <div class="langHover"><a>
+                            Polski</a></div>
+                    <div class="langHover"><a>Svenska</a></div>
+                </div>
+                <div>
+                    <div class="langHover"><a>
+                            Čeština</a></div>
+                    <div class="langHover"><a>
+                            Suomi</a></div>
+                    <div class="langHover"><a>
+                            日本語</a></div>
+                    <div class="langHover"><a>
+                            Português (Brasil)</a></div>
+                    <div class="langHover"><a></a></div>
+                    <div class="langHover"><a>
+                            ไทย</a></div>
+                </div>
+                <div>
+                    <div class="langHover"><a>
+                            Dansk</a></div>
+                    <div class="langHover"><a>Deutsch</a></div>
+                    <div class="langHover"><a>
+                            한국어</a></div>
+                    <div class="langHover"><a>Русский</a></div>
+                </div>
+            </div>
+            <hr class="seprator">
+            <div class="endOfSpeechify">
+                <div><img src="https://website.cdn.speechify.com/speechify-logo-v2.svg?quality=80&width=384"></div>
+                <div class="footerLinksOfSpeechify">
+                    <div>Terms & Conditions</div>
+                    <div>Privacy Policy</div>
+                    <div>© Speechify Inc 2025</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
