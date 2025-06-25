@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duolingo for Schools</title>
+    <style>
+        body {
+            font-family: "din-round", sans-serif;
+            margin: 0px;
+        }
+
+        .mainSection {}
+
+        .headerSection {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 60px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .introDuo {
+            display: flex;
+            gap: 30px;
+        }
+
+        .btnLogin {
+            display: flex;
+            gap: 20px;
+        }
+
+        .secondHalf {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .headTitles {
+            font-size: 16px;
+            color: #777;
+            font-weight: 700;
+        }
+
+        .buttonsOfDuo {
+            padding: 13px 30px;
+            background-color: hsl(0deg 0% 100% / 40%);
+            font-weight: 700;
+            border-radius: 14px;
+            color: #1cb0f6;
+            border: none;
+            font-size: 15px;
+            border: 2px solid hsl(0deg 0% 100% / 80%);
+            box-shadow: 4px 3px #b5b4b4;
+
+        }
+
+        .buttonsOfDuolingo {
+            padding: 13px 30px;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 14px;
+            background-color: #1cb0f6;
+            border: 1px solid #1899d6;
+            font-size: 15px;
+            box-shadow: 2px 3px #1899d6 ;
+        }
+
+        .middleSctionOfDuo {
+            background-image: url(https://schools-cdn.duolingo.com/images/09cebe78cadbe53a9ebb3491ea3d7a6c.svg);
+            background-color: #1899d6;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            width: 100%;
+            /* height:50vh; */
+            justify-content: space-evenly;
+            /* padding: 30px; */
+            margin-bottom: 40px;
+        }
+
+        .signUpTitle {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .signUpSubTitle {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 20px;
+
+        }
+
+        .signUpSection {
+            padding: 0 40px;
+        }
+
+        .btnSignUp {
+            padding: 15px 30px;
+            background-color: #fff;
+            font-weight: 700;
+            border-radius: 14px;
+            color: #1cb0f6;
+            border: none;
+            font-size: 15px;
+            /* border:2px solid#777;  */
+        }
+
+        .fourthSection {
+            width: 70%;
+            margin: auto;
+        }
+
+        .curriculum {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .titleFourthSec {
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #4b4b4b;
+        }
+
+        .subTitleFourthSec {
+            font-size: 16px;
+            margin-bottom: 24px;
+            line-height: 24px;
+            color: #777;
+        }
+
+        .allAboutTeachers {
+            /* background-color: #58cc02; */
+            background-color: #58cc02;
+            color: #fff;
+            width: 100%;
+            height: 70vh;
+        }
+
+        .teacherSecTitle {
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cardSection {
+            width: 70%;
+            margin: auto;
+            padding: 40px;
+        }
+
+        .teacherDetailCard {
+            display: flex;
+            gap: 35px;
+        }
+
+        .cardImages {
+            position: relative;
+        }
+
+        .appleImage {
+            bottom: 0;
+            position: absolute;
+            right: 99px;
+        }
+
+        .firstCard {
+            width: 80%;
+            padding: 20px;
+            height: 40vh;
+            background-color: #fff;
+            color: #777;
+            border-radius: 26px;
+            text-align: center;
+        }
+
+        .cardTitle {
+            color: #777;
+            line-height: 24px;
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom: 27px;
+        }
+
+        .nameOfTeacher {
+            color: #3c3c3c;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .teachersSubject {
+            color: #afafaf;
+
+        }
+
+        table {
+            border: 2px solid #e5e5e5;
+            /* border-collapse: collapse; */
+        }
+
+        .wholeSectionAccordian {
+            border: 2px solid #e5e5e5;
+            border-radius: 10px;
+            width: 40%;
+            margin: auto;
+
+        }
+
+        .accordian {
+            /* width: 40%; */
+
+            /* margin: auto; */
+            padding: 50px;
+
+        }
+
+        .queSection {}
+
+        .headAccordian {
+            padding: 20px;
+            text-align: left;
+            font-size: 17px;
+            color: #3c3c3c;
+            font-weight: 600;
+            /* border-bottom: 2px solid #e5e5e5; */
+        }
+
+        .tableData {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 2px solid #e5e5e5;
+            color: #777;
+            font-size: 17px;
+            line-height: 24px;
+
+        }
+
+        .accordianTitle {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: #4b4b4b;
+            margin-bottom: 30px;
+        }
+
+        .messageToTeachers {
+            background-color: #1899d6;
+            color: #fff;
+            width: 100%;
+            height: 70vh;
+            margin-bottom: 30px;
+        }
+
+        .youTubeVideoOfDuo {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .aMessageToTeacher {
+            margin-top: 60px;
+            font-size: 56px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .thankYouMessageToTeachers {
+            font-size: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .bringDuoToClassroom {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 45px;
+        }
+
+        .enjoyTheDuo {
+            font-size: 48px;
+            font-weight: 700;
+            color: #4b4b4b;
+            margin-bottom: 14px;
+
+        }
+
+        .getStartedBtn {
+            padding: 13px 30px;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 14px;
+             background-color: #1cb0f6;
+            border: 1px solid #1899d6;
+            font-size: 15px;
+            box-shadow: 2px 3px #1899d6 ;
+            cursor: pointer;
+        }
+        .getStartedBtn:hover{
+            background-color:#51b4e1;
+        }
+        .linksSection {
+            display: flex;
+            
+            width: 50%;
+            margin: auto;
+            padding: 30px;
+        }
+        .footerEle{
+            display: flex;
+            gap:28px;
+            text-decoration: none;
+            color: #afafaf;
+
+        }
+        .linksOfDuo{
+            color: #afafaf;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainSection">
+        <div class="headerSection">
+            <div><img src="https://schools-cdn.duolingo.com/images/1ac662c38f6077cba917c6f394033e24.svg"></div>
+            <div class="secondHalf">
+                <div class="introDuo">
+                    <div class="headTitles">DUOLINGO</div>
+                    <div class="headTitles">TEACHER TRAINING</div>
+                </div>
+                <div class="btnLogin">
+                    <div><button class="buttonsOfDuo">LOGIN</button></div>
+                    <div><button class="buttonsOfDuolingo">SIGN UP</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="middleSctionOfDuo">
+            <div class="signUpSection">
+                <div class="signUpTitle">free for your<br>
+                    classroom!</div>
+                <div class="signUpSubTitle">An easy way to make language learning fun and<br> personalized</div>
+                <div><button class="btnSignUp">SIGN UP</button></div>
+            </div>
+            <div><img src="https://schools-cdn.duolingo.com/images/36f6de0980bf7fae7ff7a26d12076932.svg"></div>
+        </div>
+        <div class="fourthSection">
+            <div class="curriculum">
+
+                <div><img src="https://schools-cdn.duolingo.com/images/splash/4554d68c1e5f798620f380335bf7d0d4.svg">
+                </div>
+                <div>
+                    <div class="titleFourthSec">standards-aligned<br> curriculum</div>
+                    <div class="subTitleFourthSec">Duolingo for Schools applies both ACTFL and CEFR<br> learning
+                        standards
+                        to Duolingo’s extensive<br> curriculum, allowing you to find content that meets<br> your
+                        teaching needs.
+                    </div>
+                </div>
+
+            </div>
+            <div class="curriculum">
+                <div>
+                    <div class="titleFourthSec">fun, personalized <br>assignments</div>
+                    <div class="subTitleFourthSec">
+                        Assignments leverage the best of AI and language science to adapt to the right level and pace
+                        for each student. And students love the game-like features and fun challenges!
+                    </div>
+                </div>
+                <img src="https://schools-cdn.duolingo.com/images/splash/dd8ad0669c3388876d3fecd4407c2a55.svg">
+            </div>
+            <div class="curriculum">
+                <div><img src="https://schools-cdn.duolingo.com/images/splash/8e600ee309c20d2e4efa1964b52ec2f5.svg  ">
+                </div>
+                <div>
+                    <div class="titleFourthSec">
+                        student progress<br> insights
+                    </div>
+                    <div class="subTitleFourthSec">
+                        See how your students are progressing with in-depth insights like accuracy and time spent
+                        learning.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="allAboutTeachers">
+            <div class="cardSection">
+                <div class="teacherSecTitle">hear from our teachers</div>
+                <div class="teacherDetailCard">
+                    <div class="firstCard">
+                        <div class="cardImages">
+                            <div> <img
+                                    src="https://schools-cdn.duolingo.com/images/splash/teachers/b0b188089a2cb5d0359e6ec93f69f73d.png">
+                            </div>
+                            <div class="appleImage"> <img
+                                    src="https://schools-cdn.duolingo.com/images/splash/teachers/715431d94c9be726440306cde1f85962.svg">
+                            </div>
+
+                        </div>
+                        <div class="cardTitle">Learning happens best when the application feels like a game. Duolingo is
+                            just plain fun, and we are able to leverage this in the classroom.</div>
+                        <div class="nameOfTeacher">Pamela Parks</div>
+                        <div class="teachersSubject">High School French, Spanish, & Japanese teacher</div>
+                    </div>
+
+                    <div class="firstCard">
+                        <div class="cardImages">
+                            <div> <img
+                                    src="https://schools-cdn.duolingo.com/images/splash/teachers/c8176efe55f271f1874e5e239c2a686e.png">
+                            </div>
+                            <div class="appleImage"> <img
+                                    src="https://schools-cdn.duolingo.com/images/splash/teachers/715431d94c9be726440306cde1f85962.svg">
+                            </div>
+
+                        </div>
+                        <div class="cardTitle">I love that Duolingo is a quick and easy way for my students to keep
+                            practicing their Spanish outside of the classroom.</div>
+                        <div class="nameOfTeacher">Melissa Cantú</div>
+                        <div class="teachersSubject">High School Spanish teacher</div>
+                    </div>
+
+
+                    <div class="firstCard">
+                        <div class="cardImages">
+                            <div> <img
+                                    src="https://schools-cdn.duolingo.com/images/splash/teachers/b2a7ea08f9ec09a4491ea3f471aec904.png">
+                            </div>
+                            <div class="appleImage"> <img
+                                    src="https://schools-cdn.duolingo.com/images/splash/teachers/715431d94c9be726440306cde1f85962.svg">
+                            </div>
+
+                        </div>
+                        <div class="cardTitle">I love using Duolingo because the element of gamification makes my
+                            students forget that they are actually learning while playing.</div>
+                        <div class="nameOfTeacher">Gitte Duus </div>
+                        <div class="teachersSubject class=""">High School language teacher</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="accordianTitle">frequently asked questions</div>
+
+
+            <div class="wholeSectionAccordian">
+                <div class="queSection">
+                    <div class="headAccordian">Does Duolingo for Schools cost money?</div>
+                    <div class="tableData">No! Duolingo for Schools is 100% free.</div>
+                </div>
+                <div class="queSection">
+                    <div class="headAccordian">Is Duolingo for Schools different from Duolingo?</div>
+                    <div class="tableData">Duolingo for Schools is a free layer of management that sits on top of the
+                        Duolingo
+                        language
+                        learning app. You’ll gain visibility into and a level of control over your students’
+                        experience
+                        on Duolingo.</div>
+                </div>
+                <div class="queSection">
+                    <div class="headAccordian">What if my students are already using Duolingo?</div>
+                    <div class="tableData">We’ve got you covered! Add existing accounts to your classroom to preserve
+                        existing student
+                        progress, or get students started fresh with our quick account setup.</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="messageToTeachers">
+            <div class="youTubeVideoOfDuo">
+                <div class="aMessageToTeacher">a message for teachers</div>
+                <div class="thankYouMessageToTeachers">A thank you from our CEO and co-founder.</div>
+                <div>
+
+                    <iframe width="560" height="314" style="border-radius: 15px; cursor: pointer;" 
+                        src="https://www.youtube.com/embed/E6hadnnW-JE" title="Thank You Teachers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bringDuoToClassroom">
+            <div>
+                <div class="enjoyTheDuo"> Bring Duolingo to your classroom</div>
+                <div> <button class="getStartedBtn">GET STARTED</button></div>
+            </div>
+            <div>
+                <img src="https://schools-cdn.duolingo.com/images/splash/91df9aca9db7e77f8e3fada5fd9da9fb.png"
+                    width="257" height="231px">
+            </div>
+        </div>
+        <hr>
+        <div class="linksSection">
+            <div class="footerEle">
+                <div><a href="https://www.duolingo.com/" class="linksOfDuo">Duolingo</a></div>
+                <div><a href="https://www.duolingo.com/info" class="linksOfDuo">About</a></div>
+                <div><a href="https://careers.duolingo.com/" class="linksOfDuo">Careers</a></div>
+                <div><a href="https://www.duolingo.com/mobile" class="linksOfDuo">Apps</a></div>
+                <div><a href="https://duolingoschools.zendesk.com/hc/en-us" class="linksOfDuo">Help</a></div>
+                <div><a href="https://twitter.com/DuolingoSchools" class="linksOfDuo">Twitter</a></div>
+                <div><a href="https://www.duolingo.com/privacy" class="linksOfDuo">Privacy</a></div>
+                <div><a href="https://www.facebook.com/groups/duolingoeducators" class="linksOfDuo">Facebook</a></div>
+                <div><a href="https://twitter.com/DuolingoSchools" class="linksOfDuo">Twitter</a></div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
