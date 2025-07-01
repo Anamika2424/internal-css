@@ -180,44 +180,144 @@
             box-shadow: 0 17px 24px 0 rgba(162, 224, 217, 0), 0 5px 12px 0 rgba(48, 229, 252, .5);
             margin-bottom: 20px;
         }
-        .callSection{
+
+        .callSection {
             display: flex;
             align-items: center;
         }
-        .contactUsText{
+
+        .contactUsText {
             font-size: 18px;
             font-weight: 600;
-            color:#6739b7;
+            color: #6739b7;
 
         }
-        .knowMoreSection{
+
+        .knowMoreSection {
             display: flex;
             justify-content: space-between;
         }
-        .grievances{
+
+        .grievances {
             width: 80%;
             margin: auto;
         }
-        .getInTouchWithPhonepe{
+
+        .getInTouchWithPhonepe {
             width: 28%;
 
         }
-        .titleOfKnowMoreSection{
+
+        .titleOfKnowMoreSection {
             font-size: 25px;
-            font-weight:600 ;
+            font-weight: 600;
             margin-bottom: 20px;
-            color:#3b1f6c;
+            color: #3b1f6c;
         }
-        .subtitleOfKnowMoreSection{
+
+        .subtitleOfKnowMoreSection {
             font-size: 16px;
-            color:#606060;
+            color: #606060;
             line-height: 24px;
             margin-bottom: 20px;
         }
-        .sendMessage{
+
+        .sendMessage {
+            gap: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sendMsgTxt {
             color: #6739b7;
             font-size: 18px;
+            /* font-weight: 600; */
+        }
+
+        .phonePeLimited {
+            width: 35%;
+
+        }
+
+        .registeredAddressSection {
+            width: 80%;
+            margin: auto;
+            padding: 40px;
+        }
+
+        .mapSec {
+            display: flex;
+            align-items: center;
+        }
+
+        .addressSecOfPhonepe {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .titleRegisteredAddress {
+            font-size: 30px;
+            color: #3b1f6c;
             font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .phonePeLimited {
+            font-size: 17px;
+            color: #606060;
+            line-height: 28px;
+        }
+
+        .containerMap {
+            width: 50%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0.0.0.0.1);
+            border-radius: 10px;
+
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+
+        }
+        .map-container{
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        .mapIframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 400px;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+
+        }
+        .button{
+            display: inline-block;
+            background-color: #4caf50;
+            color:#fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+
+        }
+        .button:hover{
+            background:#45a0;
         }
     </style>
 </head>
@@ -294,6 +394,7 @@
                 </div>
             </div>
         </div>
+
         <div class="helpSection">
             <div class="getInstantHelp">
                 <div class="getHelpSec">
@@ -321,25 +422,67 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                
+
             </div>
-            
+
         </div>
-        
+
         <div class="grievances">
             <div class="knowMoreSection">
-                <div  class="getInTouchWithPhonepe">
+                <div class="getInTouchWithPhonepe">
                     <div class="titleOfKnowMoreSection">Grievances</div>
-                    <div class="subtitleOfKnowMoreSection">Get in touch with us to escalate any existing complaints, and we will ensure a quick resolution.</div>
+                    <div class="subtitleOfKnowMoreSection">Get in touch with us to escalate any existing complaints, and
+                        we will ensure a quick resolution.</div>
                     <div class="sendMessage">
-                        Send a message</div>
+                        <span><img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjExLjE3IDEzLjgzIDI2LjY3IDIxLjMzIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTM1LjE2NiAxMy44MzNIMTMuODM0Yy0xLjEyIDAtMi4wODQuNy0yLjQ3OCAxLjY4NC4xMzUuMDI2LjI2Ni4wOC4zODUuMTYzbDEyLjc2IDguOTMyIDEyLjc2LTguOTMyYS45OTUuOTk1IDAgMCAxIC4zODQtLjE2MyAyLjY3NiAyLjY3NiAwIDAgMC0yLjQ3Ny0xLjY4NFptMi42NjcgMy44ODctMTIuNzYgOC45MzJhMSAxIDAgMCAxLTEuMTQ2IDBsLTEyLjc2LTguOTMyVjMyLjVjMCAxLjQ2
+                            NiAxLjIgMi42NjYgMi42NjYgMi42NjZoMjEuMzM0YzEuNDY2IDAgMi42NjYtMS4yIDIuNjY2LTIuNjY2VjE3LjcyWiIgZmlsbD0iIzdENDdDRSIvPjwvc3ZnPg=="
+                                height="30px" width="30px"></span>
+                        <span class="sendMsgTxt"> Send a message</span>
+                    </div>
 
                 </div>
                 <div class="getInTouchWithPhonepe">
                     <div class="titleOfKnowMoreSection">Ombudsman</div>
-                    <div class="subtitleOfKnowMoreSection">You can direct your complaints to our regulating authority by sending them a message.</div>
-                    <div class="sendMessage">Know More</div>
+                    <div class="subtitleOfKnowMoreSection">You can direct your complaints to our regulating authority by
+                        sending them a message.</div>
+                    <div class="sendMsgTxt">Know More</div>
                 </div>
+            </div>
+        </div>
+        <div class="registeredAddressSection">
+            <div class="addressSecOfPhonepe">
+                <div>
+                    <div class="titleRegisteredAddress">Registered Address</div>
+                    <div class="phonePeLimited">PhonePe Limited
+                        (Formerly known as 'PhonePe Private Limited')
+                        Office-2, Floor 5, Wing A, Block A,
+                        Salarpuria Softzone, Bellandur Village,
+                        Varthur Hobli, Outer Ring Road, Bangalore South,
+                        Bangalore, Karnataka, India, 560103
+                        CIN: U67190KA2012PTC176031</div>
+                    <div class="mapSec">
+                        <span><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhl
+                            aWdodD0iNDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+
+                            PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNSAzNy44MzNzMTAuNjY2LTggM
+                            TAuNjY2LTE2YTEwLjY2NyAxMC42NjcgMCAxIDAtMjEuMzMzIDBjMCA4IDEwLjY2NyAxNiAxMC42NjcgMTZabTQtMTYuMDAx
+                            YTQgNCAwIDEgMS04IDAgNCA0IDAgMCAxIDggMFoiIGZpbGw9IiM3RDQ3Q0UiLz48L3N2Zz4="></span>
+                        <span>View in Maps</span>
+                    </div>
+                </div>
+                <div class="containerMap">
+                    <h1>Explore our Location</h1>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.742685757861!2d77.66521478165663!3d12.924252754864497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13760d58dd77%3A0x5d1703aa07d3ea8b!2sSalarpuria%20Softzone!5e0!3m2!1sen!2sin!4v1751300675912!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;"  class="mapIframe"    allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="#" class="button">
+                        View on Google Maps
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>
